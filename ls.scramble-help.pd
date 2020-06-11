@@ -1,0 +1,33 @@
+#N canvas 476 159 803 423 12;
+#X obj 11 371 print;
+#X obj 12 247 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 105 317 seed 123;
+#X obj 11 273 ls.ser.arithm 1 1000 1;
+#X obj 11 347 ls.scramble;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 81 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0;
+#X obj 83 87 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0;
+#X obj 1 111 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 117 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 211 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 401 cnv 3 800 3 empty empty empty 8 12 0 13 -128992 -1 0;
+#X text 32 48 vanilla abstraction that scrambles the elements of a
+list;
+#X text 104 87 list: list to scramble;
+#X text 105 117 list: scrambled list;
+#X obj 1 141 cnv 3 800 3 empty empty messages 8 12 0 13 -228856 -1
+0;
+#X msg 13 164 seed 100;
+#X text 81 164 pseudo random seed generator;
+#X obj 1 -1 cnv 3 800 3 empty empty ls.scramble 14 14 1 16 -128992
+-66577 0;
+#X text 649 62 tested on pd 0.50-2;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;

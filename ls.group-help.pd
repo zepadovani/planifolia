@@ -1,0 +1,73 @@
+#N canvas 729 33 802 753 12;
+#X obj 1 31 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 105 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 111 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 225 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 231 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 355 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 305 cnv 3 800 3 empty empty arguments 8 12 0 13 -228856 -1
+0;
+#X obj 1 1 cnv 3 800 3 empty empty ls.group 14 14 1 16 -128992 -66577
+0;
+#X obj 83 191 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X obj 116 565 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 83 251 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X text 32 52 vanilla abstraction that groups incoming elements into
+lists;
+#X obj 26 407 until;
+#X msg 98 511 reset;
+#X obj 27 435 f;
+#X obj 56 435 + 1;
+#X msg 69 407 0;
+#X msg 26 385 30;
+#X msg 99 532 clear;
+#X text 148 522 clears residual elements in internal list;
+#X obj 102 674 print nothing_to_group_anymore;
+#X text 134 564 bang: dumps a list with the residual elements;
+#X floatatom 102 625 5 0 0 0 - - -;
+#X text 145 625 change group size;
+#X text 106 111 float/symbol: elements to group;
+#X text 106 130 list: elements to iterate and regroup;
+#X obj 35 728 print grouped;
+#X obj 68 697 print residual elements;
+#X obj 35 650 ls.group 7;
+#X text 107 148 bang: dump residual relements as a list (outlet 1)
+;
+#X text 107 168 clear/reset: clears residual list;
+#X text 104 191 float: new group size;
+#X text 105 231 list: list of grouped elements;
+#X text 105 251 list: list of residual elements;
+#X obj 83 271 cnv 18 3 17 empty empty 2 5 9 0 14 -228856 -162280 0
+;
+#X text 105 271 bang: when there is nothing anymore to group;
+#X text 105 321 1 float: group size;
+#X text 90 437 generating some floats to group;
+#X msg 78 477 a 4 dd e z 3 5;
+#X text 191 478 also works with lists (retrigger to rotate elements!)
+;
+#X text 656 87 tested on pd 0.50-2;
+#X msg 637 40 José H. Padovani \, 2020;
+#X text 670 71 planifolia \, v.0.1;
+#X connect 9 0 28 0;
+#X connect 12 0 14 0;
+#X connect 13 0 28 0;
+#X connect 14 0 15 0;
+#X connect 14 0 28 0;
+#X connect 15 0 14 1;
+#X connect 16 0 14 1;
+#X connect 17 0 12 0;
+#X connect 18 0 28 0;
+#X connect 22 0 28 1;
+#X connect 28 0 26 0;
+#X connect 28 1 27 0;
+#X connect 28 2 20 0;
+#X connect 38 0 28 0;

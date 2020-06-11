@@ -1,0 +1,69 @@
+#N canvas 224 71 802 703 12;
+#X obj 1 31 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 85 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0;
+#X obj 83 91 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0;
+#X obj 1 185 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 191 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 295 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 685 cnv 3 800 3 empty empty empty 8 12 0 13 -128992 -1 0;
+#X obj 1 245 cnv 3 800 3 empty empty arguments 8 12 0 13 -228856 -1
+0;
+#X obj 1 1 cnv 3 800 3 empty empty ls.removeAt 14 14 1 16 -128992 -66577
+0;
+#X text 32 52 vanilla abstraction that remove the Nth element of a
+list;
+#X text 104 91 list: input list;
+#X text 104 111 float/i/index: index of the element to remove;
+#X text 104 131 bang: last processed list;
+#X obj 83 154 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X text 104 154 list: fixed input list;
+#X text 105 191 list: output list;
+#X text 105 261 1 float: index of the element to remove;
+#X obj 13 360 ls.ser.arithm 1 20 1;
+#X obj 13 328 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 91 414 2;
+#X msg 92 460 idx 2;
+#X obj 105 542 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 14 384 a 2 v s f fge rgeg eg;
+#X obj 35 580 ls.removeAt 3;
+#X text 56 336 input lists;
+#X msg 91 437 i 2;
+#X text 127 413 element to remove;
+#X text 125 542 retrigger last list;
+#X floatatom 91 497 5 0 0 0 - - -;
+#X text 134 499 this also works;
+#X obj 420 488 ls.removeAt;
+#X floatatom 420 366 5 0 0 0 - - -;
+#X msg 521 440 1 2 3 4 5 6 7 8 9 10;
+#X obj 521 417 loadbang;
+#X text 464 364 element to remove;
+#X obj 35 656 print outputlist;
+#X obj 123 626 print removed_element;
+#X obj 494 512 print removed_element;
+#X obj 420 548 print outputlist;
+#X obj 83 211 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X text 105 211 symbol/float: removed element;
+#X text 662 64 tested on pd 0.50-2;
+#X connect 17 0 23 0;
+#X connect 18 0 17 0;
+#X connect 19 0 23 0;
+#X connect 20 0 23 0;
+#X connect 21 0 23 0;
+#X connect 22 0 23 0;
+#X connect 23 0 35 0;
+#X connect 23 1 36 0;
+#X connect 25 0 23 0;
+#X connect 28 0 23 0;
+#X connect 30 0 38 0;
+#X connect 30 1 37 0;
+#X connect 31 0 30 0;
+#X connect 32 0 30 1;
+#X connect 33 0 32 0;

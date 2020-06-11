@@ -1,0 +1,12 @@
+#N canvas 506 49 998 621 12;
+#X obj 188 261 ls.choose;
+#X obj 186 292 print a;
+#X obj 196 322 print b;
+#X text 250 324 index;
+#X text 240 294 element;
+#X msg 198 171 a b c d e;
+#X msg 243 231 10 20 30 40 50;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 5 0 0 0;
+#X connect 6 0 0 0;
