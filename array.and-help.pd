@@ -1,0 +1,26 @@
+#N canvas 0 23 1049 600 12;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array arrayA 20 float 3;
+#A 0 -1 -1 -1 1 1 -1 1 1 -1 1 -1 1 -1 -1 1 -1 -1 -1 1 -1;
+#X coords 0 1 20 -1 200 140 1;
+#X restore 73 47 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array arrayB 20 float 3;
+#A 0 0 0 1 0 0 0 0 1 1 0 1 1 0 0 0 1 1 1 1 1;
+#X coords 0 1 20 -1 200 140 1;
+#X restore 72 232 graph;
+#X obj 341 35 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 332 63 array.rand arrayA;
+#X obj 331 89 array.rand arrayB;
+#X obj 453 292 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array outArray 20 float 3;
+#A 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1;
+#X coords 0 1 20 -1 200 140 1 0 0;
+#X restore 69 424 graph;
+#X obj 454 316 array.and arrayA arrayB outArray;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
+#X connect 5 0 7 0;

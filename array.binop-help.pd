@@ -1,0 +1,50 @@
+#N canvas 372 23 990 611 12;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-arrayA 10 float 3;
+#A 0 1.7 1 1 0.4 1.2 1.6 1.7 0.2 0.4 0.1;
+#X coords 0 1 10 -1 200 140 1 0 0;
+#X restore 93 -4 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-arrayB 10 float 3;
+#A 0 -1 0 0 1 -1 0 0 0 1 0;
+#X coords 0 1 10 -1 200 140 1 0 0;
+#X restore 90 174 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-arrayC 10 float 3;
+#A 0 -1.7 0 0 0.4 -1.2 0 0 0 0.4 0;
+#X coords 0 1 10 -1 200 140 1 0 0;
+#X restore 91 410 graph;
+#X obj 742 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 741 12 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 361 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 360 222 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 360 243 array.binop \$0-arrayA \$0-arrayB \$0-arrayC +;
+#X obj 360 272 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 359 293 array.binop \$0-arrayA \$0-arrayB \$0-arrayC /;
+#X obj 358 332 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 358 350 array.binop \$0-arrayA \$0-arrayB \$0-arrayC &&;
+#X obj 741 34 array.rand \$0-arrayA 0 2 0.1;
+#X obj 358 382 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 358 400 array.binop \$0-arrayA \$0-arrayB \$0-arrayC ||;
+#X obj 742 80 array.rand \$0-arrayB -1 1 1;
+#X obj 358 432 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 358 450 array.binop \$0-arrayA \$0-arrayB \$0-arrayC cos;
+#X floatatom 400 197 5 0 0 0 - - -;
+#X obj 461 197 print;
+#X obj 360 172 array.binop \$0-arrayA \$0-arrayB *;
+#X connect 3 0 15 0;
+#X connect 4 0 12 0;
+#X connect 5 0 20 0;
+#X connect 6 0 7 0;
+#X connect 8 0 9 0;
+#X connect 10 0 11 0;
+#X connect 13 0 14 0;
+#X connect 16 0 17 0;

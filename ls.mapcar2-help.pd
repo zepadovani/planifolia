@@ -1,0 +1,15 @@
+#N canvas 542 157 849 617 12;
+#X obj 148 181 print;
+#X msg 148 50 1 2 3 4 5;
+#X msg 241 75 10 20 30 40 50;
+#X obj 540 205 print;
+#X msg 540 74 1 2 3 4 5;
+#X msg 633 99 0 20 30 40 50;
+#X obj 540 183 ls.mapcar2 >;
+#X obj 148 158 ls.mapcar2 expr cos($f2+$f1)/2;
+#X connect 1 0 7 0;
+#X connect 2 0 7 1;
+#X connect 4 0 6 0;
+#X connect 5 0 6 1;
+#X connect 6 0 3 0;
+#X connect 7 0 0 0;
