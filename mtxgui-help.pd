@@ -1,4 +1,4 @@
-#N canvas 226 39 804 940 12;
+#N canvas 226 23 1214 855 12;
 #X obj 1 29 cnv 3 800 3 empty empty description 12 12 0 12 -128992
 -66577 0;
 #X obj 1 113 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
@@ -353,7 +353,7 @@ the matrix with the following commands:;
 #X connect 12 0 10 0;
 #X connect 13 0 14 0;
 #X restore 492 360 pd instantiate;
-#N canvas 517 132 993 689 set_individual_cell_color 0;
+#N canvas 447 132 993 689 set_individual_cell_color 0;
 #X obj 65 328 mtxgui 5 5 10;
 #X obj 64 7 loadbang;
 #X text 68 31 set some values to test colors;
