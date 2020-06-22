@@ -1,67 +1,384 @@
-#N canvas 464 336 890 595 10;
-#X obj -3 442 mtxstep 4 9;
-#X obj 421 327 mtxstep 4 9;
-#X msg 458 293 colorreset;
-#X msg 663 326 satval inactive on 70 190;
-#X msg 663 349 satval active off 0 210;
-#X msg 663 372 satval active on 225 245;
-#X msg 663 303 satval inactive off 0 100;
-#X msg 435 262 loadbang;
-#X msg 577 243 hue 1 1 150;
-#X msg 379 110 hue 140;
-#X text 432 110 hue of all active cells;
-#X msg 379 134 hue row 1 140;
-#X text 475 134 hue of all active cells in row 1;
-#X text 475 154 hue of all active cells in col 1;
-#X msg 378 84 hue 1 1 140;
-#X text 474 84 hue of cell r c (when active);
-#X obj 302 221 print a;
-#X obj 303 175 route hue;
-#X obj 312 243 print b;
-#X obj 330 262 print c;
-#X obj 354 281 print d;
-#X obj 303 194 route row col float list;
-#X msg 379 154 hue col 1 150;
-#X floatatom 685 255 5 0 0 0 - - -;
-#X obj 270 374 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#N canvas 605 23 1440 855 10;
+#X obj 1 29 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 113 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 119 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 273 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 281 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 413 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 1 cnv 3 800 3 empty empty mtxstep 14 14 1 16 -128992 -66577
+0;
+#N canvas 0 23 1183 557 (subpatch) 0;
+#X obj 347 40 pdcontrol;
+#X obj 13 8 inlet;
+#X msg 14 40 browse http://josehenriquepadovani.com;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X coords 0 -1 1 1 1 1 2 1 1;
+#X restore 656 91 pd;
+#X msg 656 77 José H. Padovani \, 2020;
+#X text 650 7 planifolia \, v.0.1.0;
+#X text 694 96 tested on pd 0.51;
+#X text 32 50 a vanilla abstraction/GUI to create polymetric \, pattern-based
+step sequencers.;
+#X text 104 121 commands:;
+#X text 176 133 ms \, sec \, bpm \, cps;
+#X text 224 146 num/phase;
+#X text 224 172 del/delay;
+#X text 248 212 color;
+#X text 218 225 colorreset;
+#X text 224 120 sw \, float;
+#X text 288 120 switch metro(s) on/off;
+#X text 288 133 tempo setting;
+#X text 288 145 jump to specific cell on next beat;
+#X text 288 172 set delay of a specific metro (in ms);
+#X text 194 185 dirpat/steppat;
+#X text 288 184 direction/step pattern (default 1);
+#X text 164 198 beatpat/beatpattern;
+#X text 288 198 beat pattern (in beat divisions);
+#X text 288 212 color setting (see syntax below);
+#X text 288 225 reset to the default color;
+#X text 272 238 +;
+#X text 408 237 col row matrix element get set setrows setcols setsize
+setcellsize setnewargs mtxdump;
+#N canvas 224 400 1183 557 (subpatch) 0;
+#X obj 13 46 pdcontrol;
+#X obj 13 8 inlet;
+#X msg 13 65 \; pd open mtxgui-help.pd \$1 \;;
+#X msg 13 27 dir 0;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 3 0 0 0;
+#X coords 0 -1 1 1 1 1 2 1 1;
+#X restore 710 407 pd;
+#X msg 710 393 mtxgui-help.pd;
+#X obj 991 550 mtxstep 2 3;
+#X msg 1107 533 row 2 0 1 0;
+#X msg 949 509 matrix;
+#X msg 999 476 sw \$1;
+#X obj 952 436 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X msg 270 395 sw \$1;
-#X floatatom 740 200 5 0 0 0 - - -;
-#X msg 741 219 hue col 1 \$1;
-#X msg 511 233 mode row;
-#X msg 686 274 hue row 3 \$1;
-#X floatatom 622 195 5 0 0 0 - - -;
-#X msg 623 214 hue \$1;
-#X msg 511 214 mode col;
-#X msg 511 194 mode colrow;
-#X connect 2 0 1 0;
-#X connect 3 0 1 0;
-#X connect 4 0 1 0;
-#X connect 5 0 1 0;
-#X connect 6 0 1 0;
-#X connect 7 0 1 0;
-#X connect 8 0 1 0;
-#X connect 9 0 17 0;
-#X connect 9 0 1 0;
-#X connect 11 0 17 0;
-#X connect 11 0 1 0;
-#X connect 14 0 17 0;
-#X connect 14 0 1 0;
-#X connect 17 0 21 0;
-#X connect 21 0 16 0;
-#X connect 21 1 18 0;
-#X connect 21 2 19 0;
-#X connect 21 3 20 0;
-#X connect 22 0 17 0;
-#X connect 22 0 1 0;
-#X connect 23 0 29 0;
+#X msg 1068 466 set 2 1 1;
+#X obj 991 585 print;
+#X msg 1021 514 matrix 2 3 1 0 1 0 1 0;
+#X obj 985 693 mtxstep 8 4;
+#X msg 991 666 sw \$1;
+#X obj 989 641 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 1053 629 mode colrow;
+#X msg 1055 653 num col 2 1;
+#X msg 821 642 colorreset;
+#X msg 1108 720 color hue \$1;
+#X obj 1188 647 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 948 647 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 105 280 the abstraction uses only one real output \, but uses
+tags to route the following info:;
+#X text 146 309 cellon:;
+#X text 195 309 [list] retrieves list if current cell is on (row col
+val);
+#X text 152 329 idxon:;
+#X text 195 329 [list] retrieves list if current cell is on (idx val)
+;
+#X text 195 349 [list] retrieves list if current cell is off (row col
+0);
+#X text 140 349 celloff:;
+#X text 146 369 idxoff:;
+#X text 195 369 [list] retrieves list if current cell is off (idx 0)
+;
+#X text 182 388 +;
+#X text 198 388 lists with mtxgui output tags: cell/row/col/changed/mtx*
+;
+#X text 288 238 mtxgui* methods...;
+#X text 674 394 *see:;
+#X obj 1082 277 mtxstep 4 8;
+#X obj 118 478 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 643 507 mode colrow;
+#X msg 643 489 mode row;
+#X msg 484 676 dirpat row 1 -1;
+#X msg 386 760 dirpat row 1 1 1 1 1 -1 -1 -1 -1 -1 -1 -1 -1;
+#X msg 494 728 dirpat row 6 1 1 1 1 -4 7 -4 6;
+#X msg -135 799 dirpat 1;
+#X obj 781 853 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 786 873 sw row 7 \$1;
+#X msg 803 808 bpm row 7 72 2;
+#X msg 793 831 bpm row 7 72 3;
+#X msg 644 813 dirpat row 7 0.5;
+#X obj 506 579 s \$0-in1;
+#X obj 547 554 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 543 539 all metros on/off;
+#X obj 646 602 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 740 602 s \$0-in1;
+#X text 664 586 col metro on/off;
+#X msg 664 602 sw col 6 \$1;
+#N canvas 0 23 450 300 load_somevals 0;
+#X obj 16 110 outlet;
+#X obj 16 23 loadbang;
+#X obj 73 22 inlet;
+#X msg 68 109 bpm 72 4;
+#X msg 16 41 matrix 8 16 1 0 0 0 1 0 1 0 1 0 0 1 1 0 1 0 1 1 0 0 0
+1 0 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0
+1 0 0 1 0 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 0 1 0
+1 0 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 0 0 0 0 0 1
+0 1 0 1 0;
+#X connect 1 0 4 0;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X restore 197 503 pd load_somevals;
+#N canvas 277 78 1163 812 synths 0;
+#X obj 33 21 inlet;
+#X obj 33 40 route cellon celloff;
+#X obj 249 563 catch~ \$0-L;
+#X obj 249 594 dac~;
+#X obj 339 563 catch~ \$0-R;
+#X obj 376 611 env~;
+#X obj 34 186 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 34 216 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 118 246 + 1;
+#X obj 34 246 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 54 246 random 2;
+#X obj 118 276 + 1;
+#X obj 34 276 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 118 306 + 1;
+#X obj 34 306 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 54 306 random 32;
+#X obj 118 336 + 1;
+#X obj 34 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 54 336 random 11;
+#X obj 34 101 route 1 2 3 4 5 6 7 8;
+#X obj 118 366 + 1;
+#X obj 34 366 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 54 367 random 14;
+#X obj 118 396 + 1;
+#X obj 34 396 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 54 397 random 10;
+#X obj 222 246 clone -s 1 sndabs 2 \$0 2 conga 90 96 -400 10 30 60
+;
+#X floatatom 383 641 5 0 0 0 - - -;
+#X obj 222 397 clone -s 1 sndabs 10 \$0 10 caxi 88 95 0 100 40 80;
+#X msg 143 366 \$1 noteon;
+#X msg 143 396 \$1 noteon;
+#X msg 143 336 \$1 noteon;
+#X msg 143 306 \$1 noteon;
+#X msg 143 277 \$1 noteon;
+#X msg 143 246 \$1 noteon;
+#X msg 143 216 \$1 noteon;
+#X msg 143 186 \$1 noteon;
+#X obj 222 337 clone -s 1 sndabs 11 \$0 11 ago 93 95 -10 10 40 80;
+#X obj 222 367 clone -s 1 sndabs 14 \$0 14 cctri 95 99 -10 10 75 80
+;
+#X obj 222 307 clone -s 1 sndabs 32 \$0 32 pand 99 103 0 500 40 80
+;
+#X obj 221 277 clone -s 1 sndabs 17 \$0 17 ganza 90 96 -400 10 30 60
+;
+#X obj 54 276 random 17;
+#X obj 118 186 + 2;
+#X obj 54 186 random 1;
+#X text 547 185 only surdo2 works better :);
+#X obj 222 185 clone -s 2 sndabs 1 \$0 1 surdo 94 96 800 850 10 40
+;
+#X obj 118 216 + 3;
+#X obj 54 216 random 2;
+#X obj 222 216 clone -s 3 sndabs 2 \$0 2 zab 96 100 300 350 80 100
+;
+#X connect 0 0 1 0;
+#X connect 1 0 19 0;
+#X connect 2 0 3 0;
+#X connect 2 0 5 0;
+#X connect 4 0 3 1;
+#X connect 4 0 5 0;
+#X connect 5 0 27 0;
+#X connect 6 0 43 0;
+#X connect 7 0 47 0;
+#X connect 8 0 34 0;
+#X connect 9 0 10 0;
+#X connect 10 0 8 0;
+#X connect 11 0 33 0;
+#X connect 12 0 41 0;
+#X connect 13 0 32 0;
+#X connect 14 0 15 0;
+#X connect 15 0 13 0;
+#X connect 16 0 31 0;
+#X connect 17 0 18 0;
+#X connect 18 0 16 0;
+#X connect 19 0 6 0;
+#X connect 19 1 7 0;
+#X connect 19 2 9 0;
+#X connect 19 3 12 0;
+#X connect 19 4 14 0;
+#X connect 19 5 17 0;
+#X connect 19 6 21 0;
+#X connect 19 7 24 0;
+#X connect 20 0 29 0;
+#X connect 21 0 22 0;
+#X connect 22 0 20 0;
+#X connect 23 0 30 0;
 #X connect 24 0 25 0;
-#X connect 25 0 1 0;
-#X connect 26 0 27 0;
-#X connect 27 0 1 0;
-#X connect 28 0 1 0;
-#X connect 29 0 1 0;
-#X connect 30 0 31 0;
-#X connect 31 0 1 0;
-#X connect 32 0 1 0;
-#X connect 33 0 1 0;
+#X connect 25 0 23 0;
+#X connect 29 0 38 0;
+#X connect 30 0 28 0;
+#X connect 31 0 37 0;
+#X connect 32 0 39 0;
+#X connect 33 0 40 0;
+#X connect 34 0 26 0;
+#X connect 35 0 48 0;
+#X connect 36 0 45 0;
+#X connect 41 0 11 0;
+#X connect 42 0 36 0;
+#X connect 43 0 42 0;
+#X connect 46 0 35 0;
+#X connect 47 0 46 0;
+#X restore 44 701 pd synths;
+#X text 289 521 [mtxstep 8 16];
+#X text 9 572 surdo;
+#X text 21 588 zab;
+#X text 9 604 conga;
+#X text 15 635 pand;
+#X text 21 649 ago;
+#X text 9 665 cctri;
+#X text 15 680 caxi;
+#X obj 130 512 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 134 532 sw row 6 \$1;
+#X msg 184 549 bpm 72 4;
+#X obj 43 551 r \$0-in1;
+#X obj 286 587 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 420 587 s \$0-in1;
+#X text 363 553 row metro on/off;
+#X obj 286 571 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 420 571 s \$0-in1;
+#X obj 43 571 mtxstep 8 16 15;
+#X text 9 620 ganza;
+#X msg 304 587 sw row 2 \$1;
+#X obj 286 618 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 420 618 s \$0-in1;
+#X obj 286 603 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 420 603 s \$0-in1;
+#X msg 304 603 sw row 3 \$1;
+#X msg 304 618 sw row 4 \$1;
+#X obj 286 633 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 420 633 s \$0-in1;
+#X msg 304 633 sw row 5 \$1;
+#X obj 286 649 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 420 649 s \$0-in1;
+#X msg 304 649 sw row 6 \$1;
+#X obj 286 665 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 420 665 s \$0-in1;
+#X msg 304 665 sw row 7 \$1;
+#X obj 286 681 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 420 681 s \$0-in1;
+#X msg 304 681 sw row 8 \$1;
+#X msg 45 517 num 1;
+#X msg 7 482 num row 1 1;
+#X text 288 158 jump to specific cell immediately;
+#X text 188 159 numnow/phasenow;
+#X obj 197 486 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 894 831 s \$0-in1;
+#X msg 412 496 bpm \$1 4;
+#X obj 122 702 s \$0-swing;
+#X obj 421 426 r \$0-swing;
+#X floatatom 445 478 5 0 0 0 - - -;
+#X obj 105 702 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 412 457 random 4;
+#X obj 411 477 + 70;
+#X msg 304 569 sw row 1 \$1;
+#X obj -27 736 print;
+#X obj 215 701 route cellon;
+#X msg 215 720 \$2;
+#X obj 287 740;
+#X obj 216 763 list prepend set;
+#X obj 216 784 list trim;
+#X msg 216 805 13 13 14 14;
+#X obj 215 739 ls.group 4;
+#X connect 8 0 7 0;
+#X connect 32 0 31 0;
+#X connect 33 0 39 0;
+#X connect 34 0 33 0;
+#X connect 35 0 33 0;
+#X connect 36 0 33 0;
+#X connect 37 0 36 0;
+#X connect 38 0 33 0;
+#X connect 40 0 33 0;
+#X connect 42 0 41 0;
+#X connect 43 0 42 0;
+#X connect 44 0 41 0;
+#X connect 45 0 41 0;
+#X connect 46 0 41 0;
+#X connect 47 0 41 0;
+#X connect 48 0 47 0;
+#X connect 49 0 41 0;
+#X connect 69 0 76 0;
+#X connect 71 0 72 0;
+#X connect 74 0 128 0;
+#X connect 77 0 76 0;
+#X connect 79 0 82 0;
+#X connect 82 0 80 0;
+#X connect 83 0 102 0;
+#X connect 93 0 94 0;
+#X connect 95 0 102 0;
+#X connect 96 0 102 0;
+#X connect 97 0 104 0;
+#X connect 100 0 136 0;
+#X connect 102 0 84 0;
+#X connect 102 0 133 0;
+#X connect 102 0 137 0;
+#X connect 102 0 138 0;
+#X connect 104 0 98 0;
+#X connect 105 0 110 0;
+#X connect 107 0 109 0;
+#X connect 109 0 108 0;
+#X connect 110 0 106 0;
+#X connect 111 0 113 0;
+#X connect 113 0 112 0;
+#X connect 114 0 116 0;
+#X connect 116 0 115 0;
+#X connect 117 0 119 0;
+#X connect 119 0 118 0;
+#X connect 120 0 122 0;
+#X connect 122 0 121 0;
+#X connect 123 0 102 0;
+#X connect 124 0 102 0;
+#X connect 127 0 83 0;
+#X connect 129 0 102 0;
+#X connect 131 0 134 0;
+#X connect 133 0 130 0;
+#X connect 134 0 135 0;
+#X connect 135 0 129 0;
+#X connect 135 0 132 0;
+#X connect 136 0 101 0;
+#X connect 138 0 139 0;
+#X connect 139 0 144 0;
+#X connect 141 0 142 0;
+#X connect 142 0 143 0;
+#X connect 144 0 141 0;

@@ -1,0 +1,84 @@
+#N canvas 418 23 823 749 12;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 137 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 83 157 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 201 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 207 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 83 227 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 251 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 721 cnv 3 800 3 empty empty empty 8 12 0 13 -128992 -1 0;
+#X obj 1 -1 cnv 3 800 3 empty empty slashroute 14 14 1 16 -128992 -66577
+0;
+#X text 650 58 tested on pd 0.51;
+#X text 32 48 vanilla abstraction to route vals to specific paths.
+The abstaction argument is a symbol of slash separated tags that will
+be employed to create a sequence of [route] objects. The abstraction
+may be usefull when used with [oscparse] to route OSC messages \, for
+instance.;
+#X text 103 137 list of elements to be routed;
+#X text 105 207 routed element;
+#X msg 72 408 list 1 2 3;
+#X obj 168 451 list trim;
+#X obj 168 428 list prepend aa bb cc;
+#X msg 72 429 1;
+#X msg 73 450 bang;
+#X obj 118 552 print slashroute1;
+#X obj 118 602 print slashroute2;
+#X obj 118 652 print slashroute3;
+#X obj 118 630 slashroute /aa/bb/cc/bang;
+#X obj 118 580 slashroute /aa/bb/cc/list;
+#X obj 487 529 route aa;
+#X obj 551 529 route bb;
+#X obj 615 529 route cc;
+#X obj 678 529 route float;
+#X obj 487 579 route aa;
+#X obj 551 579 route bb;
+#X obj 615 579 route cc;
+#X obj 487 629 route aa;
+#X obj 551 629 route bb;
+#X obj 615 629 route cc;
+#X obj 678 579 route list;
+#X obj 678 629 route bang;
+#X text 104 157 list of tags to create \, internally \, a new sequence
+of [route] objects;
+#X obj 195 479 print;
+#X msg 292 388 aa bb dd;
+#X msg 370 419 aa/bb/dd/float;
+#X obj 118 530 slashroute /aa/bb/cc/float;
+#X text 347 529 ...same as...;
+#X text 347 579 ...same as...;
+#X text 347 630 ...same as...;
+#X text 475 418 <- change route sequence;
+#X text 104 227 rejected elements (of every internal [route] instance)
+;
+#X connect 14 0 16 0;
+#X connect 15 0 37 0;
+#X connect 15 0 40 0;
+#X connect 15 0 22 0;
+#X connect 15 0 23 0;
+#X connect 16 0 15 0;
+#X connect 17 0 16 0;
+#X connect 18 0 16 0;
+#X connect 22 0 21 0;
+#X connect 23 0 20 0;
+#X connect 24 0 25 0;
+#X connect 25 0 26 0;
+#X connect 26 0 27 0;
+#X connect 28 0 29 0;
+#X connect 29 0 30 0;
+#X connect 30 0 34 0;
+#X connect 31 0 32 0;
+#X connect 32 0 33 0;
+#X connect 33 0 35 0;
+#X connect 38 0 16 1;
+#X connect 39 0 40 1;
+#X connect 40 0 19 0;

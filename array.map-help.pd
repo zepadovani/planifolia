@@ -1,0 +1,29 @@
+#N canvas 452 177 1385 836 12;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array arrayA 10 float 3;
+#A 0 -0.6 -0.1 -0.2 0.4 -0.1 0.5 -1 -0.6 -0.7 1;
+#X coords 0 1 10 -1 200 140 1 0 0;
+#X restore 221 61 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array arrayC 10 float 3;
+#A 0 0.6 0.1 0.2 0.4 0.1 0.5 1 0.6 0.7 1;
+#X coords 0 1 10 -1 200 140 1 0 0;
+#X restore 219 345 graph;
+#X obj 869 217 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 522 41 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 869 239 array.rand arrayA -1 1 0.1;
+#X obj 521 80 t b b;
+#X msg 547 107 inarray arrayA \, outarray arrayC;
+#X obj 640 354 expr;
+#X obj 521 172 array.map abs;
+#N canvas 0 23 450 300 a 1;
+#X obj 124 72 inlet;
+#X restore 821 449 pd a;
+#X msg 787 564 \; pd-a inlets \;;
+#X connect 2 0 4 0;
+#X connect 3 0 5 0;
+#X connect 5 0 8 0;
+#X connect 5 1 6 0;
+#X connect 6 0 8 0;

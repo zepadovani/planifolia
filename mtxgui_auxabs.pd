@@ -1,14 +1,14 @@
 #N canvas 186 402 1326 626 12;
 #X obj 612 36 r \$2-stog-\$1;
-#X msg 61 230 color -1.62816e+07 -1.62816e+07 -1.62816e+07;
-#X msg 422 230 color -1 -1 -1;
+#X msg 61 230 color -1.24870e+07 -1.24870e+07 -1.24870e+07;
+#X msg 422 230 color -5.92137e+06 -5.92137e+06 -5.92137e+06;
 #X obj 422 253 s \$2-rtog-\$1;
 #X obj 542 165 v \$2-\$1-tval;
-#X msg 633 163 set \$1;
+#X msg 682 103 set \$1;
 #X obj -64 -88 r \$2-mtxgui_colorons;
 #X obj 421 -112 r \$2-mtxgui_coloroffs;
-#X obj 273 169 f;
-#X obj 633 185 s \$2-rtog-\$1;
+#X obj 273 129 f;
+#X obj 682 125 s \$2-rtog-\$1;
 #X obj 61 255 s \$2-rtog-\$1;
 #X obj 273 193 sel 1 0;
 #X obj -78 -129 inlet;
@@ -24,7 +24,7 @@
 #X obj 612 59 t b b f f f f;
 #X obj 402 279 t b b;
 #X obj 402 523 s \$2-mtxgui_mtxdump;
-#X obj 444 433 s \$2-mtxguiout3;
+#X obj 444 433 s \$2-mtxguiout4;
 #X obj 511 495 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 402 486 spigot;
@@ -493,13 +493,14 @@
 #X connect 26 0 20 1;
 #X connect 27 0 20 1;
 #X restore 139 -3 pd mtxguicolors;
+#X obj 273 151 != 0;
 #X connect 0 0 22 0;
 #X connect 1 0 10 0;
 #X connect 2 0 3 0;
 #X connect 5 0 9 0;
 #X connect 6 0 50 0;
 #X connect 7 0 43 0;
-#X connect 8 0 11 0;
+#X connect 8 0 51 0;
 #X connect 11 0 1 0;
 #X connect 11 1 2 0;
 #X connect 13 0 14 1;
@@ -555,3 +556,4 @@
 #X connect 49 0 50 1;
 #X connect 50 0 8 0;
 #X connect 50 1 1 0;
+#X connect 51 0 11 0;

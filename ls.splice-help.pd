@@ -1,9 +1,9 @@
-#N canvas 222 39 714 456 12;
+#N canvas 778 288 714 456 12;
 #X msg 297 250 10 20 30 40 50;
 #X msg 259 223 2;
 #X obj 230 323 print;
 #X obj 231 290 ls.splice;
-#X msg 211 189 1;
+#X msg 211 189 1 1 2;
 #X connect 0 0 3 2;
 #X connect 1 0 3 1;
 #X connect 3 0 2 0;

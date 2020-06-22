@@ -1,17 +1,18 @@
 #N canvas 452 177 1385 836 12;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array arrayA 10 float 3;
-#A 0 -0.9 0.4 -0.3 0.1 -0.9 -0.3 -0.2 0.1 0.9 0.9;
+#A 0 0.5 0.3 0.5 0.8 0.2 0 0.9 -0.7 0.8 0.6;
 #X coords 0 1 10 -1 200 140 1 0 0;
 #X restore 221 61 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array arrayB 10 float 3;
-#A 0 1 1 0 1 1 0 0 1 1 0;
+#A 0 -1 1 1 0 1 -1 -1 -1 0 -1;
 #X coords 0 1 10 -1 200 140 1 0 0;
 #X restore 218 279 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array arrayC 10 float 3;
-#A 0 0.1 0.4 0 0.1 0.1 0 0 0.1 0.9 0;
+#A 0 0.428577 0.257145 0.0428542 -0.214295 -0.285725 -0.328583 -0.485729
+-0.542874 -0.62859 -0.871452;
 #X coords 0 1 10 -1 200 140 1 0 0;
 #X restore 219 615 graph;
 #X obj 870 263 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144

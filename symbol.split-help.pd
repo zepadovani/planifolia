@@ -1,0 +1,10 @@
+#N canvas 267 23 1424 744 12;
+#X obj 325 301 symbol.split /;
+#X obj 327 335 print;
+#X msg 318 272 aba/ebe/ibi/obo/ubu;
+#X msg 478 302 b;
+#X msg 479 326 /;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;
+#X connect 4 0 0 1;

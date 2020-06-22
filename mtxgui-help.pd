@@ -1,4 +1,4 @@
-#N canvas 226 23 1214 855 12;
+#N canvas 402 40 1038 686 12;
 #X obj 1 29 cnv 3 800 3 empty empty description 12 12 0 12 -128992
 -66577 0;
 #X obj 1 113 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
@@ -7,19 +7,12 @@
 ;
 #X obj 1 183 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
 ;
-#X obj 83 209 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+#X obj 83 189 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
 ;
-#X obj 83 229 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
-;
-#X obj 83 249 cnv 18 3 17 empty empty 2 5 9 0 14 -228856 -162280 0
-;
-#X obj 83 279 cnv 18 3 17 empty empty 3 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 323 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+#X obj 1 425 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
 ;
 #X obj 1 1 cnv 3 800 3 empty empty mtxgui 14 14 1 16 -128992 -66577
 0;
-#X text 656 88 tested on pd 0.50-2;
 #N canvas 0 23 1183 557 (subpatch) 0;
 #X obj 347 40 pdcontrol;
 #X obj 13 8 inlet;
@@ -33,17 +26,7 @@
 setsize setcellsize setnewargs colorons coloroffs mtxdump cellcolorons
 cellcoloroffs colcolorons colcoloroffs rowcolorons rowcoloroffs (see
 below);
-#X text 104 229 list:;
-#X text 169 229 output of col/row methods (used to get row/col values)
-;
-#X text 105 209 float:;
-#X text 105 249 list:;
-#X text 169 249 output individual cell values that have changed (row
-column value);
-#X text 169 209 output of get/element methods (used to get cell values)
-;
-#X text 104 279 matrix:;
-#N canvas 364 23 1316 872 setting_values 0;
+#N canvas 124 23 1316 855 setting_values 0;
 #X obj 65 28 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X msg 65 47 set 2 3 \$1;
@@ -71,20 +54,19 @@ column value);
 #X msg 193 442 mtxdump \$1;
 #X obj 193 423 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 26 585 print out0;
-#X obj 57 563 print out1;
-#X obj 90 540 print out2;
-#X obj 123 518 print out3;
-#X msg 308 441 colordefault;
 #X msg 126 126 col 5 0.1 1 1 1 1 1 1;
+#X obj 245 559 print cell;
+#X obj 252 580 print row;
+#X obj 252 602 print col;
+#X obj 224 624 print changed;
+#X obj 26 520 route cell row col changed mtx;
+#X obj 252 646 print mtx;
+#X obj 238 668 print other;
 #X connect 0 0 1 0;
 #X connect 1 0 11 0;
 #X connect 2 0 11 0;
 #X connect 3 0 2 0;
-#X connect 11 0 20 0;
-#X connect 11 1 21 0;
-#X connect 11 2 22 0;
-#X connect 11 3 23 0;
+#X connect 11 0 25 0;
 #X connect 12 0 11 0;
 #X connect 13 0 11 0;
 #X connect 14 0 11 0;
@@ -92,14 +74,16 @@ column value);
 #X connect 16 0 11 0;
 #X connect 18 0 11 0;
 #X connect 19 0 18 0;
-#X connect 24 0 11 0;
-#X connect 25 0 11 0;
-#X restore 492 381 pd setting_values;
-#N canvas 617 23 734 499 getting_values 0;
-#X obj 654 568 print out1;
-#X obj 664 598 print out2;
-#X obj 674 628 print out3;
-#N canvas 0 23 1657 960 loadbang 0;
+#X connect 20 0 11 0;
+#X connect 25 0 21 0;
+#X connect 25 1 22 0;
+#X connect 25 2 23 0;
+#X connect 25 3 24 0;
+#X connect 25 4 26 0;
+#X connect 25 5 27 0;
+#X restore 562 481 pd setting_values;
+#N canvas 617 23 734 666 getting_values 0;
+#N canvas 0 23 1440 855 loadbang 0;
 #X obj 26 161 outlet;
 #X obj 26 26 loadbang;
 #X msg 26 48 matrix 7 27 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -110,9 +94,7 @@ column value);
 0 1 0 0 0 0 1 0 0 0 1 0 1 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
-#X restore 86 359 pd loadbang;
-#X obj 62 449 print out0;
-#X obj 139 449 print out1;
+#X restore 86 309 pd loadbang;
 #X msg 58 36 get 3 2;
 #X msg 68 60 element 3 2;
 #X text 200 41 get row col;
@@ -124,35 +106,127 @@ column value);
 #X msg 123 195 row 7;
 #X msg 117 172 row 1;
 #X msg 137 232 matrix;
-#X obj 217 449 print out2;
-#X obj 294 449 print out3;
 #X text 231 230 matrix;
 #X text 292 49 -> get cell value (out0);
 #X text 292 99 -> get entire col values (out1);
 #X text 292 169 -> get entire row values (out1);
 #X text 292 229 -> get entire matrix (out3);
-#X obj 61 380 mtxgui 7 27 8;
-#X connect 3 0 24 0;
-#X connect 6 0 24 0;
-#X connect 7 0 24 0;
-#X connect 10 0 24 0;
-#X connect 11 0 24 0;
-#X connect 14 0 24 0;
-#X connect 15 0 24 0;
-#X connect 16 0 24 0;
-#X connect 24 0 4 0;
-#X connect 24 1 5 0;
-#X connect 24 2 17 0;
-#X connect 24 3 18 0;
-#X restore 492 403 pd getting_values;
-#X text 169 279 output of matrix messages. Also outputs matrices if
-you send [mtxdump 1< to the object;
-#X obj 494 486 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 61 330 mtxgui 7 27 8;
+#X obj 280 436 print cell;
+#X obj 287 457 print row;
+#X obj 287 479 print col;
+#X obj 259 501 print changed;
+#X obj 61 397 route cell row col changed mtx;
+#X obj 287 523 print mtx;
+#X connect 0 0 17 0;
+#X connect 1 0 17 0;
+#X connect 2 0 17 0;
+#X connect 5 0 17 0;
+#X connect 6 0 17 0;
+#X connect 9 0 17 0;
+#X connect 10 0 17 0;
+#X connect 11 0 17 0;
+#X connect 17 0 22 0;
+#X connect 22 0 18 0;
+#X connect 22 1 19 0;
+#X connect 22 2 20 0;
+#X connect 22 3 21 0;
+#X connect 22 4 23 0;
+#X restore 562 503 pd getting_values;
+#X obj 20 839 mtxgui 5 5 10;
+#X obj 19 464 loadbang;
+#X msg 95 812 mtxdump \$1;
+#X obj 95 795 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 314 1021 <- ready to be used with iemmatrix;
+#X text 314 1000 <- individual cell updates;
+#X text 314 935 <- get/element query;
+#X msg 64 666 get 1 2;
+#X msg 64 687 get 1 3;
+#X msg 36 524 set 2 4 \$1;
+#X obj 36 507 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 20 485 matrix 5 5 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0
+0 0 0 0;
+#X msg 47 578 row 4 0 0 0 0 0;
+#X msg 58 631 col 4 0 0 0 0 0;
+#X msg 58 609 col 4 1 1 1 1 1;
+#X text 123 672 same as "element row col";
+#X text 114 522 same as "element row col value";
+#X msg 100 750 col 4;
+#X msg 86 718 row 4;
+#X msg 46 557 row 4 1 1 1 1 1;
+#N canvas 561 55 767 714 instantiate 0;
+#X obj 64 84 mtxgui;
+#X obj 66 160 mtxgui 4 2;
+#X obj 66 248 mtxgui 2 3 20;
+#X text 61 140 [mtxgui 4 2] -> 4 rows \, 2 columns;
+#X text 63 60 [mtxgui] (no arguments) -> 3 rows \, 4 cols \, cellsize:
+13;
+#X text 61 230 [mtxgui 2 3 20] -> 2 rows \, 3 columns \, cellsize:
+20;
+#X msg 67 404 setrows 5;
+#X msg 77 428 setcols 12;
+#X msg 88 451 setsize 5 9;
+#X text 45 37 You can create a mtxgui with the following syntaxes;
+#X obj 66 505 mtxgui 4 4 10;
+#X text 45 337 It is possible to change these parameters and reinstantiate
+the matrix with the following commands:;
+#X msg 96 476 setnewargs 12 12 8;
+#X obj 66 631 route mtxgui_ready;
+#X obj 66 655 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X text 86 653 <- may be usefull to know when everything is ready (as
+the GUI is created with dynamic patching);
+#X connect 6 0 10 0;
+#X connect 7 0 10 0;
+#X connect 8 0 10 0;
+#X connect 10 0 13 0;
+#X connect 12 0 10 0;
+#X connect 13 0 14 0;
+#X restore 562 460 pd instantiate;
+#X text 32 50 a vanilla abstraction/GUI to work with matrices;
+#X text 560 441 see:;
+#X text 650 7 planifolia \, v.0.1.0;
+#X text 670 88 tested on pd 0.51;
+#X obj 239 936 print cell;
+#X obj 246 957 print row;
+#X obj 246 979 print col;
+#X obj 218 1001 print changed;
+#X obj 20 897 route cell row col changed mtx;
+#X obj 246 1023 print mtx;
+#X obj 232 1045 print other;
+#X text 314 955 <- row query;
+#X text 314 978 <- col query;
+#X text 314 1044 <- internal state/other messages;
+#X text 174 815 dump matrix when setting values (use [route mtx]);
+#X text 109 189 the abstraction uses only one real output \, but uses
+tags to route the following info:;
+#X text 162 224 cell:;
+#X text 199 224 [float] result of get/element methods;
+#X text 169 247 row:;
+#X text 199 248 [list] result of row method;
+#X text 169 271 col:;
+#X text 199 271 [list] result of col method;
+#X text 141 295 changed:;
+#X text 169 322 mtx:;
+#X text 199 322 [list] result of matrix method. Also outputs matrices
+continuously \, at every change \, if [mtxdump 1< is sent to the object.
+;
+#X obj 1 1093 cnv 3 800 3 empty empty empty 8 12 0 13 -228856 -1 0
+;
+#X text 155 376 other:;
+#X text 199 376 [list] internal state messages (signals if matrix was
+already generated through the abstraction dynamic patching process
+\, for instance).;
+#X text 199 296 [list] outputs all cell values that changed (row col
+val);
+#X obj 564 586 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas 927 43 993 689 set_matrix_color 0;
+#N canvas 447 43 993 689 set_matrix_color 0;
 #X obj 65 608 mtxgui 5 5 10;
 #X obj 64 7 loadbang;
-#N canvas 0 23 450 300 packvals 1;
+#N canvas 0 23 450 300 packvals 0;
 #X obj 39 34 inlet;
 #X obj 39 142 pack 0 0 0;
 #X obj 79 105 t b f;
@@ -192,7 +266,7 @@ you send [mtxdump 1< to the object;
 #X floatatom 234 81 5 0 0 0 - - -;
 #X floatatom 234 101 5 0 0 0 - - -;
 #X floatatom 234 122 5 0 0 0 - - -;
-#N canvas 0 23 450 300 packvals 1;
+#N canvas 0 23 450 300 packvals 0;
 #X obj 39 34 inlet;
 #X obj 39 142 pack 0 0 0;
 #X obj 79 105 t b f;
@@ -233,7 +307,7 @@ you send [mtxdump 1< to the object;
 #X msg 256 372 colormode rgb;
 #X text 357 372 (default);
 #X text 358 396 <- the color commands will be interpreted as hue/saturation/value
-;
+(instead of R G B);
 #X connect 1 0 7 0;
 #X connect 2 0 6 0;
 #X connect 6 0 0 0;
@@ -254,8 +328,8 @@ you send [mtxdump 1< to the object;
 #X connect 26 0 0 0;
 #X connect 28 0 0 0;
 #X connect 29 0 0 0;
-#X restore 495 798 pd set_matrix_color;
-#N canvas 517 132 993 689 set_colrow_color 0;
+#X restore 565 898 pd set_matrix_color;
+#N canvas 447 132 993 689 set_colrow_color 0;
 #X obj 64 7 loadbang;
 #X text 68 31 set some values to test colors;
 #X text 333 160 rowcolorons rownumber R G B;
@@ -291,68 +365,10 @@ you send [mtxdump 1< to the object;
 #X connect 17 0 14 0;
 #X connect 20 0 14 0;
 #X connect 22 0 14 0;
-#X restore 495 819 pd set_colrow_color;
-#X obj 525 512 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X restore 565 919 pd set_colrow_color;
+#X obj 595 612 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 20 729 mtxgui 5 5 10;
-#X obj 19 354 loadbang;
-#X obj 20 854 print out0;
-#X obj 34 832 print out1;
-#X obj 48 809 print out2;
-#X obj 63 787 print out3;
-#X msg 95 702 mtxdump \$1;
-#X obj 95 685 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X text 142 786 <- ready to be used with iemmatrix;
-#X text 128 810 <- individual cell updates;
-#X text 114 833 <- col/row query;
-#X text 103 854 <- get/element query;
-#X msg 64 556 get 1 2;
-#X msg 64 577 get 1 3;
-#X msg 36 414 set 2 4 \$1;
-#X obj 36 397 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X msg 20 375 matrix 5 5 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0
-0 0 0 0;
-#X msg 47 468 row 4 0 0 0 0 0;
-#X msg 58 521 col 4 0 0 0 0 0;
-#X msg 58 499 col 4 1 1 1 1 1;
-#X text 123 562 same as "element row col";
-#X text 114 412 same as "element row col value";
-#X msg 100 640 col 4;
-#X msg 86 608 row 4;
-#X text 505 510 or;
-#X msg 46 447 row 4 1 1 1 1 1;
-#X text 174 705 dump matrix on out3 when setting values;
-#N canvas 561 55 767 714 instantiate 0;
-#X obj 64 84 mtxgui;
-#X obj 66 160 mtxgui 4 2;
-#X obj 66 248 mtxgui 2 3 20;
-#X text 61 140 [mtxgui 4 2] -> 4 rows \, 2 columns;
-#X text 63 60 [mtxgui] (no arguments) -> 3 rows \, 4 cols \, cellsize:
-13;
-#X text 61 230 [mtxgui 2 3 20] -> 2 rows \, 3 columns \, cellsize:
-20;
-#X msg 67 404 setrows 5;
-#X msg 77 428 setcols 12;
-#X msg 88 451 setsize 5 9;
-#X text 45 37 You can create a mtxgui with the following syntaxes;
-#X obj 66 502 mtxgui 4 4 10;
-#X text 45 337 It is possible to change these parameters and reinstantiate
-the matrix with the following commands:;
-#X msg 96 476 setnewargs 12 12 8;
-#X obj 99 552 route mtxgui_ready;
-#X obj 99 575 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X text 119 574 <- may be usefull to know when everything is ready
-(as the GUI is created with dynamic patching);
-#X connect 6 0 10 0;
-#X connect 7 0 10 0;
-#X connect 8 0 10 0;
-#X connect 10 3 13 0;
-#X connect 12 0 10 0;
-#X connect 13 0 14 0;
-#X restore 492 360 pd instantiate;
+#X text 575 610 or;
 #N canvas 447 132 993 689 set_individual_cell_color 0;
 #X obj 65 328 mtxgui 5 5 10;
 #X obj 64 7 loadbang;
@@ -369,13 +385,9 @@ the matrix with the following commands:;
 #X connect 3 0 0 0;
 #X connect 4 0 0 0;
 #X connect 5 0 0 0;
-#X restore 495 840 pd set_individual_cell_color;
-#X text 32 50 a vanilla abstraction/GUI to work with matrices;
-#X text 513 484 colors!;
-#X text 493 778 see:;
-#X text 490 341 see:;
-#X text 541 509 (left \, down or down-left?!);
-#X text 650 7 planifolia \, v.0.1.0;
+#X restore 565 940 pd set_individual_cell_color;
+#X text 583 584 colors!;
+#X text 563 878 see:;
 #N canvas 464 23 1211 940 wiphala 0;
 #X msg 386 612 255 255 255;
 #X text 478 611 white;
@@ -496,29 +508,33 @@ the matrix with the following commands:;
 #X connect 50 0 25 1;
 #X connect 51 0 25 1;
 #X connect 52 0 41 0;
-#X restore 494 538 pd wiphala;
-#X obj 494 560 mtxgui 7 7 30;
-#X obj 494 460 loadbang;
-#X connect 12 0 11 0;
-#X connect 24 0 63 0;
-#X connect 27 0 63 1;
-#X connect 28 0 30 0;
-#X connect 28 1 31 0;
-#X connect 28 2 32 0;
-#X connect 28 3 33 0;
-#X connect 29 0 44 0;
-#X connect 34 0 28 0;
-#X connect 35 0 34 0;
-#X connect 40 0 28 0;
-#X connect 41 0 28 0;
-#X connect 42 0 28 0;
-#X connect 43 0 42 0;
-#X connect 44 0 28 0;
-#X connect 45 0 28 0;
-#X connect 46 0 28 0;
-#X connect 47 0 28 0;
-#X connect 50 0 28 0;
-#X connect 51 0 28 0;
-#X connect 53 0 28 0;
-#X connect 63 0 64 0;
-#X connect 65 0 24 0;
+#X restore 564 638 pd wiphala;
+#X obj 564 660 mtxgui 7 7 30;
+#X obj 564 560 loadbang;
+#X text 611 609 :);
+#X connect 8 0 7 0;
+#X connect 12 0 41 0;
+#X connect 13 0 23 0;
+#X connect 14 0 12 0;
+#X connect 15 0 14 0;
+#X connect 19 0 12 0;
+#X connect 20 0 12 0;
+#X connect 21 0 12 0;
+#X connect 22 0 21 0;
+#X connect 23 0 12 0;
+#X connect 24 0 12 0;
+#X connect 25 0 12 0;
+#X connect 26 0 12 0;
+#X connect 29 0 12 0;
+#X connect 30 0 12 0;
+#X connect 31 0 12 0;
+#X connect 41 0 37 0;
+#X connect 41 1 38 0;
+#X connect 41 2 39 0;
+#X connect 41 3 40 0;
+#X connect 41 4 42 0;
+#X connect 41 5 43 0;
+#X connect 62 0 70 0;
+#X connect 65 0 70 1;
+#X connect 70 0 71 0;
+#X connect 72 0 62 0;
