@@ -14,7 +14,7 @@
 #X obj 1 174 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
 ;
 #X floatatom 26 413 5 0 0 0 - - -;
-#X obj 26 437 print case;
+#X obj 26 457 print case;
 #X text 652 40 tested on pd 0.50-2;
 #X obj 1 562 cnv 3 800 3 empty empty empty 8 12 0 13 -128992 -1 0;
 #X msg 274 260 symbol list;
@@ -22,7 +22,7 @@
 #X text 32 48 test if two symbols are equal;
 #X text 104 87 symbol: symbol to compare 1;
 #X text 104 107 symbol: symbol to compare 2;
-#X msg 274 238 symbol a;
+#X msg 274 208 symbol a;
 #X msg 274 282 symbol bang;
 #X msg 274 305 symbol float;
 #X msg 274 327 symbol symbol;
@@ -31,7 +31,7 @@
 #X msg 660 277 symbol a\$1;
 #X obj 688 316 list fromsymbol;
 #X obj 688 340 list split 1;
-#X msg 274 216 1;
+#X msg 274 186 1;
 #X msg 385 200 bang;
 #X obj 608 403 list tosymbol;
 #X obj 543 364 print xx;
@@ -41,13 +41,20 @@
 #X msg 650 196 symbol symbol;
 #X msg 471 429 symbol sy;
 #X msg 530 196 1;
-#X msg 23 242 symbol list;
+#X msg 23 272 symbol list;
 #X msg 23 220 symbol a;
-#X msg 23 264 symbol bang;
-#X msg 23 287 symbol float;
-#X msg 23 309 symbol symbol;
+#X msg 23 294 symbol bang;
+#X msg 23 317 symbol float;
+#X msg 23 339 symbol symbol;
 #X msg 23 198 1;
 #X obj 26 385 symbol.==;
+#X msg 23 244 symbol b;
+#X msg 92 220 a;
+#X msg 141 447 0;
+#X msg 122 413 set \$1;
+#X obj 178 433 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 274 231 symbol b;
 #X connect 8 0 9 0;
 #X connect 12 0 42 1;
 #X connect 17 0 42 1;
@@ -79,3 +86,9 @@
 #X connect 40 0 42 0;
 #X connect 41 0 42 0;
 #X connect 42 0 8 0;
+#X connect 42 0 46 0;
+#X connect 43 0 42 0;
+#X connect 44 0 42 0;
+#X connect 46 0 45 0;
+#X connect 46 0 47 0;
+#X connect 48 0 42 1;

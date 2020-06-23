@@ -1,0 +1,8 @@
+#N canvas 516 85 450 300 12;
+#X obj 173 123 ls.mode;
+#X obj 173 169 print item;
+#X obj 219 146 print count;
+#X msg 173 96 a a b a b 1 2 a b b b c 2;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 3 0 0 0;

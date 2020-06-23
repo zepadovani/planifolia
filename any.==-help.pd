@@ -3,8 +3,8 @@
 #X obj 135 178 print;
 #X msg 181 100 symbol 1;
 #X obj 135 154 any.==;
-#X msg 83 127 1 2 3 a;
-#X msg 177 128 1 2 3 a;
+#X msg 83 127 1 2 3 a v;
+#X msg 177 128 1 2 3 a v;
 #X connect 0 0 3 0;
 #X connect 2 0 3 1;
 #X connect 3 0 1 0;
