@@ -1,10 +1,35 @@
-#N canvas 778 288 714 456 12;
-#X msg 297 250 10 20 30 40 50;
-#X msg 259 223 2;
-#X obj 230 323 print;
-#X obj 231 290 ls.splice;
-#X msg 211 189 1 1 2;
-#X connect 0 0 3 2;
-#X connect 1 0 3 1;
-#X connect 3 0 2 0;
-#X connect 4 0 3 0;
+#N canvas 476 159 803 484 12;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 121 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 127 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 231 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 237 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 271 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 -1 cnv 3 800 3 empty empty ls.splice 14 14 1 16 -128992 -66577
+0;
+#X obj 619 60 plnf_version;
+#X msg 145 382 10 20 30 40 50;
+#X obj 79 455 print;
+#X obj 79 422 ls.splice;
+#X msg 59 321 1 1 2;
+#X msg 107 355 4;
+#X text 32 48 substitutes elemen N in 'list 2' by 'list 1';
+#X obj 83 157 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X obj 83 197 cnv 18 3 17 empty empty 2 5 9 0 14 -228856 -162280 0
+;
+#X text 104 197 list: original list (list 2);
+#X text 104 157 int: index of the element in 'list 2' to substitute
+by 'list 1' (N);
+#X text 104 127 list: list to insert (list 1);
+#X text 105 237 list: output list;
+#X connect 8 0 10 2;
+#X connect 10 0 9 0;
+#X connect 11 0 10 0;
+#X connect 12 0 10 1;

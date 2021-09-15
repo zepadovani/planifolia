@@ -1,0 +1,30 @@
+#N canvas 472 23 805 622 12;
+#X msg 72 257 10 20 30 40 50;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 111 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 117 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 201 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 -1 cnv 3 800 3 empty empty ls.butlast 14 14 1 16 -128992 -66577
+0;
+#X obj 621 40 plnf_version;
+#X obj 1 151 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 157 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X msg 60 232 list a b c d e;
+#X msg 160 292 a b c d e;
+#X text 183 246 sets list and automatically chooses element;
+#X text 234 291 non lists are converted to lists;
+#X obj 60 328 ls.butlast;
+#X obj 60 379 print;
+#X text 103 117 list;
+#X text 105 157 list;
+#X text 32 48 returns list without its last element;
+#X connect 0 0 13 0;
+#X connect 9 0 13 0;
+#X connect 10 0 13 0;
+#X connect 13 0 14 0;

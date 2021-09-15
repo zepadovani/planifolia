@@ -1,0 +1,31 @@
+#N canvas 476 159 810 452 12;
+#X obj 11 401 print;
+#X obj 11 327 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 11 353 ls.ser.arithm 1 1000 1;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 274 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 -1 cnv 3 800 3 empty empty ls.ser.arithm 14 14 1 16 -128992
+-66577 0;
+#X obj 619 60 plnf_version;
+#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 87 139 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 171 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 87 179 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X text 107 139 bang;
+#X obj 1 205 cnv 3 800 3 empty empty arguments 8 12 0 13 -228856 -1
+0;
+#X text 109 179 list;
+#X text 87 213 \$1 float: low;
+#X text 87 231 \$2 float: high;
+#X text 87 248 \$3 float: step;
+#X text 32 48 generates an arithmetic series from 'low' to 'high' in
+'step' steps;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;

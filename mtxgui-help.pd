@@ -1,4 +1,4 @@
-#N canvas 402 40 1038 686 12;
+#N canvas 0 23 820 1035 12;
 #X obj 1 29 cnv 3 800 3 empty empty description 12 12 0 12 -128992
 -66577 0;
 #X obj 1 113 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
@@ -13,15 +13,6 @@
 ;
 #X obj 1 1 cnv 3 800 3 empty empty mtxgui 14 14 1 16 -128992 -66577
 0;
-#N canvas 0 23 1183 557 (subpatch) 0;
-#X obj 347 40 pdcontrol;
-#X obj 13 8 inlet;
-#X msg 14 40 browse http://josehenriquepadovani.com;
-#X connect 1 0 2 0;
-#X connect 2 0 0 0;
-#X coords 0 -1 1 1 1 1 2 1 1;
-#X restore 632 83 pd;
-#X msg 632 66 José H. Padovani \, 2020;
 #X text 105 119 commands: col row matrix element get set setrows setcols
 setsize setcellsize setnewargs colorons coloroffs mtxdump cellcolorons
 cellcoloroffs colcolorons colcoloroffs rowcolorons rowcoloroffs (see
@@ -187,8 +178,6 @@ the GUI is created with dynamic patching);
 #X restore 562 460 pd instantiate;
 #X text 32 50 a vanilla abstraction/GUI to work with matrices;
 #X text 560 441 see:;
-#X text 650 7 planifolia \, v.0.1.0;
-#X text 670 88 tested on pd 0.51;
 #X obj 239 936 print cell;
 #X obj 246 957 print row;
 #X obj 246 979 print col;
@@ -212,8 +201,6 @@ tags to route the following info:;
 #X text 169 322 mtx:;
 #X text 199 322 [list] result of matrix method. Also outputs matrices
 continuously \, at every change \, if [mtxdump 1< is sent to the object.
-;
-#X obj 1 1093 cnv 3 800 3 empty empty empty 8 12 0 13 -228856 -1 0
 ;
 #X text 155 376 other:;
 #X text 199 376 [list] internal state messages (signals if matrix was
@@ -512,29 +499,29 @@ val);
 #X obj 564 660 mtxgui 7 7 30;
 #X obj 564 560 loadbang;
 #X text 611 609 :);
-#X connect 8 0 7 0;
-#X connect 12 0 41 0;
-#X connect 13 0 23 0;
-#X connect 14 0 12 0;
-#X connect 15 0 14 0;
-#X connect 19 0 12 0;
-#X connect 20 0 12 0;
-#X connect 21 0 12 0;
-#X connect 22 0 21 0;
-#X connect 23 0 12 0;
-#X connect 24 0 12 0;
-#X connect 25 0 12 0;
-#X connect 26 0 12 0;
-#X connect 29 0 12 0;
-#X connect 30 0 12 0;
-#X connect 31 0 12 0;
-#X connect 41 0 37 0;
-#X connect 41 1 38 0;
-#X connect 41 2 39 0;
-#X connect 41 3 40 0;
-#X connect 41 4 42 0;
-#X connect 41 5 43 0;
-#X connect 62 0 70 0;
-#X connect 65 0 70 1;
-#X connect 70 0 71 0;
-#X connect 72 0 62 0;
+#X obj 621 40 plnf_version;
+#X connect 10 0 37 0;
+#X connect 11 0 21 0;
+#X connect 12 0 10 0;
+#X connect 13 0 12 0;
+#X connect 17 0 10 0;
+#X connect 18 0 10 0;
+#X connect 19 0 10 0;
+#X connect 20 0 19 0;
+#X connect 21 0 10 0;
+#X connect 22 0 10 0;
+#X connect 23 0 10 0;
+#X connect 24 0 10 0;
+#X connect 27 0 10 0;
+#X connect 28 0 10 0;
+#X connect 29 0 10 0;
+#X connect 37 0 33 0;
+#X connect 37 1 34 0;
+#X connect 37 2 35 0;
+#X connect 37 3 36 0;
+#X connect 37 4 38 0;
+#X connect 37 5 39 0;
+#X connect 57 0 65 0;
+#X connect 60 0 65 1;
+#X connect 65 0 66 0;
+#X connect 67 0 57 0;

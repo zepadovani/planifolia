@@ -1,4 +1,4 @@
-#N canvas 410 58 802 751 12;
+#N canvas 410 58 820 747 12;
 #X obj 48 325 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 48 372 ls.scramble;
@@ -26,7 +26,7 @@
 ;
 #X obj 83 177 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
 ;
-#X text 97 157 list: list to sort;
+#X text 103 157 list: list to sort;
 #X text 279 176 gets current step and current list at each iteration
 ;
 #X text 104 177 float: 1/0 (default 0) -;
@@ -132,7 +132,6 @@
 #X connect 5 0 1 0;
 #X restore 8 657 pd longer_symbols;
 #X text 148 657 <- sorting floats \, chars and longer symbols;
-#X obj 1 721 cnv 3 800 3 empty empty empty 8 12 0 13 -128992 -1 0;
 #X text 105 247 list: if inlet 1 is "1" \, list state for each iteration
 ;
 #X text 32 48 vanilla abstraction implenting an ascending order;
@@ -143,8 +142,8 @@ left of the floats);
 #X text 147 476 toggles iteration monitoring;
 #X obj 1 -1 cnv 3 800 3 empty empty ls.quicksort 14 14 1 16 -128992
 -66577 0;
-#X text 650 128 tested on pd 0.51;
-#X connect 0 0 40 0;
+#X obj 621 70 plnf_version;
+#X connect 0 0 39 0;
 #X connect 1 0 3 0;
 #X connect 2 0 6 1;
 #X connect 3 0 6 0;
@@ -156,4 +155,4 @@ left of the floats);
 #X connect 8 0 9 0;
 #X connect 27 0 28 0;
 #X connect 28 0 2 0;
-#X connect 40 0 1 0;
+#X connect 39 0 1 0;

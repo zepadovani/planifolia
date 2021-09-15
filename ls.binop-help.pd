@@ -1,0 +1,58 @@
+#N canvas 458 53 806 796 12;
+#X obj 60 632 print;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 87 139 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 301 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 87 309 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 391 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 -1 cnv 3 800 3 empty empty ls.binop 14 14 1 16 -128992 -66577
+0;
+#X obj 1 355 cnv 3 800 3 empty empty arguments 8 12 0 13 -228856 -1
+0;
+#X obj 621 40 plnf_version;
+#X text 107 169 set: sets list but does not perform unary operation
+(waits for bang);
+#X text 107 200 bang: performs unary operation in the stored list;
+#X text 109 309 iterated output values;
+#X text 84 360 \$1 ... operation ex. "expr abs($f1-2)";
+#X obj 79 566 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 346 533 change operation;
+#X text 496 654 [obs: caution with commas!];
+#X msg 221 480 1 2 3 4 5;
+#X msg 67 510 set 2 2 2 3 3;
+#X text 32 48 Performs binary operation for each element in two lists
+and outputs result as a list;
+#X text 107 139 list: list 1 to perform the binary operation for each
+element;
+#X obj 87 219 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X text 107 221 list: list 2 to perform the binary operation for each
+element;
+#X obj 87 259 cnv 18 3 17 empty empty 2 5 9 0 14 -228856 -162280 0
+;
+#X obj 60 610 ls.binop +;
+#X msg 348 623 expr $f1+(log10($f2));
+#X msg 349 569 /;
+#X msg 29 485 1 0.2 3.3 -4 20;
+#X msg 348 598 pow;
+#X msg 348 653 expr fmod($f1\\\,$f2);
+#X text 25 464 list 1;
+#X text 217 461 list 2;
+#X text 108 258 binary operation/expression;
+#X connect 14 0 24 0;
+#X connect 17 0 24 1;
+#X connect 18 0 24 0;
+#X connect 24 0 0 0;
+#X connect 25 0 24 2;
+#X connect 26 0 24 2;
+#X connect 27 0 24 0;
+#X connect 28 0 24 2;
+#X connect 29 0 24 2;

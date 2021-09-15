@@ -25,12 +25,12 @@
 #X obj 575 710 t b b;
 #X obj 667 768 v \$0-maxcount;
 #X obj 253 331 t a b;
-#X msg 267 488 3;
+#X msg 267 488;
 #X obj 221 535 any.==;
 #X obj 221 580 sel 0 1;
-#X msg 120 738 3;
+#X msg 120 738;
 #X obj 269 376 s \$0-to_last_val;
-#X msg 575 768 symbol b;
+#X msg 575 768;
 #X msg 497 176 set;
 #X obj 497 198 s \$0-reset;
 #X obj 221 263 t a a;

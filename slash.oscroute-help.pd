@@ -1,0 +1,96 @@
+#N canvas 418 23 823 749 12;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 137 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 83 157 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 201 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 207 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 83 227 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 251 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 -1 cnv 3 800 3 empty empty slash.oscroute 14 14 1 16 -128992
+-66577 0;
+#X text 32 48 vanilla abstraction to route vals to specific paths.
+The abstaction argument is a symbol of slash separated tags that will
+be employed to create a sequence of [route] objects. The abstraction
+may be usefull when used with [oscparse] to route OSC messages \, for
+instance.;
+#X text 103 137 list of elements to be routed;
+#X text 105 207 routed element;
+#X msg 72 338 list 1 2 3;
+#X obj 168 381 list trim;
+#X obj 168 358 list prepend aa bb cc;
+#X msg 72 359 1;
+#X msg 73 380 bang;
+#X obj 118 482 print slash.oscroute1;
+#X obj 118 532 print slash.oscroute2;
+#X obj 118 582 print slash.oscroute3;
+#X obj 118 560 slash.oscroute /aa/bb/cc/bang;
+#X obj 118 510 slash.oscroute /aa/bb/cc/list;
+#X obj 487 459 route aa;
+#X obj 551 459 route bb;
+#X obj 615 459 route cc;
+#X obj 678 459 route float;
+#X obj 487 509 route aa;
+#X obj 551 509 route bb;
+#X obj 615 509 route cc;
+#X obj 487 559 route aa;
+#X obj 551 559 route bb;
+#X obj 615 559 route cc;
+#X obj 678 509 route list;
+#X obj 678 559 route bang;
+#X text 104 157 list of tags to create \, internally \, a new sequence
+of [route] objects;
+#X obj 195 409 print;
+#X msg 292 318 aa bb dd;
+#X msg 370 349 aa/bb/dd/float;
+#X obj 118 460 slash.oscroute /aa/bb/cc/float;
+#X text 347 459 ...same as...;
+#X text 347 509 ...same as...;
+#X text 347 560 ...same as...;
+#X text 475 348 <- change route sequence;
+#X text 104 227 rejected elements (of every internal [route] instance)
+;
+#X obj 621 40 plnf_version;
+#X text 619 269 *see:;
+#N canvas 224 400 1183 557 (subpatch) 0;
+#X obj 13 46 pdcontrol;
+#X obj 13 8 inlet;
+#X msg 13 27 dir 0;
+#X msg 13 65 \; pd open slash.oscformat-help.pd \$1 \;;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X coords 0 -1 1 1 1 1 2 1 1;
+#X restore 663 286 pd;
+#X msg 663 269 slash.oscformat;
+#X connect 12 0 14 0;
+#X connect 13 0 35 0;
+#X connect 13 0 38 0;
+#X connect 13 0 20 0;
+#X connect 13 0 21 0;
+#X connect 14 0 13 0;
+#X connect 15 0 14 0;
+#X connect 16 0 14 0;
+#X connect 20 0 19 0;
+#X connect 21 0 18 0;
+#X connect 22 0 23 0;
+#X connect 23 0 24 0;
+#X connect 24 0 25 0;
+#X connect 26 0 27 0;
+#X connect 27 0 28 0;
+#X connect 28 0 32 0;
+#X connect 29 0 30 0;
+#X connect 30 0 31 0;
+#X connect 31 0 33 0;
+#X connect 36 0 14 1;
+#X connect 37 0 38 1;
+#X connect 38 0 17 0;
+#X connect 47 0 46 0;

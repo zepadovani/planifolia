@@ -1,0 +1,57 @@
+#N canvas 642 23 1278 1035 12;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-arrayA 10 float 3;
+#A 0 -1 0.5 0.8 -0.9 -0.7 -0.9 0.1 1 0.8 0.4;
+#X coords 0 1 10 -1 200 140 1 0 0;
+#X restore 57 333 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-arrayB 10 float 2;
+#X coords 0 1 10 -1 200 140 1 0 0;
+#X restore 55 577 graph;
+#X obj 324 438 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 324 569 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 324 619 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 87 139 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 171 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 87 179 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 281 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 -1 cnv 3 800 3 empty empty array.unop 14 14 1 16 -128992 -66577
+0;
+#X text 107 139 bang;
+#X obj 1 205 cnv 3 800 3 empty empty arguments 8 12 0 13 -228856 -1
+0;
+#X obj 621 40 plnf_version;
+#X text 321 413 1 generate random values to test;
+#X text 322 546 2 perform different operations;
+#X obj 323 695 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 348 692 you can also use expr or any arbitrary abstraction!
+;
+#X obj 324 460 array.rand \$0-arrayA -1 1 0.1;
+#X obj 324 589 array.unop \$0-arrayA \$0-arrayB abs;
+#X obj 323 640 array.unop \$0-arrayA \$0-arrayB + 2;
+#X obj 323 713 array.unop \$0-arrayA \$0-arrayB expr fmod($f1 \, 0.2)
+, f 64;
+#X text 109 179 iterated output values (the same stored in arrayB)
+;
+#X text 32 48 Having an arrayA \, uses an arbitrary object or abstraction
+(with one numerical input) to perform the desired operation in the
+input values (one by one) and stores the result in arrayB;
+#X text 85 213 \$1 array 1 (input data);
+#X text 85 231 \$2 array 2 (output data);
+#X text 85 250 \$3 ... operation ex. "expr abs($f1-2)";
+#X connect 2 0 19 0;
+#X connect 3 0 20 0;
+#X connect 4 0 21 0;
+#X connect 17 0 22 0;

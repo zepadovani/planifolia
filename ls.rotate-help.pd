@@ -1,0 +1,40 @@
+#N canvas 472 23 808 514 12;
+#X msg 195 348 10 20 30 40 50;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 137 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 251 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 -1 cnv 3 800 3 empty empty ls.getRotate 14 14 1 16 -128992
+-66577 0;
+#X obj 621 40 plnf_version;
+#X obj 1 211 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 217 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 83 181 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X msg 195 323 list a b c d e;
+#X floatatom 30 295 5 0 0 0 - - -;
+#X obj 28 487 print;
+#X text 103 137 float (int): index;
+#X text 103 181 list: list to rotate through;
+#X text 103 159 bang: repeats last index;
+#X obj 55 338 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 194 401 a b c d;
+#X text 257 404 will be converted to list;
+#X text 306 337 sets list to iterate;
+#X obj 28 436 ls.rotate;
+#X text 32 48 get N rotation of q list. If N is less than 0 or greater
+than list length \, it will also work.;
+#X text 105 217 list: roated list;
+#X connect 0 0 20 1;
+#X connect 10 0 20 1;
+#X connect 11 0 20 0;
+#X connect 16 0 20 0;
+#X connect 17 0 20 1;
+#X connect 20 0 12 0;

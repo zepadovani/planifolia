@@ -1,4 +1,4 @@
-#N canvas 0 23 1920 1035 12;
+#N canvas 618 140 1920 1035 12;
 #X obj 229 330 list length;
 #X obj 500 332 list length;
 #X obj 264 914 outlet;

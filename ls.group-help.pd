@@ -1,4 +1,4 @@
-#N canvas 729 33 802 753 12;
+#N canvas 947 23 806 782 12;
 #X obj 1 31 cnv 3 800 3 empty empty description 12 12 0 12 -128992
 -66577 0;
 #X obj 1 105 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
@@ -21,8 +21,6 @@
 -1 -1;
 #X obj 83 251 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
 ;
-#X text 32 52 vanilla abstraction that groups incoming elements into
-lists;
 #X obj 26 407 until;
 #X msg 98 511 reset;
 #X obj 27 435 f;
@@ -49,25 +47,24 @@ lists;
 #X obj 83 271 cnv 18 3 17 empty empty 2 5 9 0 14 -228856 -162280 0
 ;
 #X text 105 271 bang: when there is nothing anymore to group;
-#X text 105 321 1 float: group size;
 #X text 90 437 generating some floats to group;
 #X msg 78 477 a 4 dd e z 3 5;
 #X text 191 478 also works with lists (retrigger to rotate elements!)
 ;
-#X text 656 87 tested on pd 0.50-2;
-#X msg 637 40 José H. Padovani \, 2020;
-#X text 670 71 planifolia \, v.0.1;
-#X connect 9 0 28 0;
-#X connect 12 0 14 0;
-#X connect 13 0 28 0;
-#X connect 14 0 15 0;
-#X connect 14 0 28 0;
-#X connect 15 0 14 1;
-#X connect 16 0 14 1;
-#X connect 17 0 12 0;
-#X connect 18 0 28 0;
-#X connect 22 0 28 1;
-#X connect 28 0 26 0;
-#X connect 28 1 27 0;
-#X connect 28 2 20 0;
-#X connect 38 0 28 0;
+#X text 85 321 \$1 float: group size;
+#X obj 621 40 plnf_version;
+#X text 32 52 groups incoming elements into lists;
+#X connect 9 0 27 0;
+#X connect 11 0 13 0;
+#X connect 12 0 27 0;
+#X connect 13 0 14 0;
+#X connect 13 0 27 0;
+#X connect 14 0 13 1;
+#X connect 15 0 13 1;
+#X connect 16 0 11 0;
+#X connect 17 0 27 0;
+#X connect 21 0 27 1;
+#X connect 27 0 25 0;
+#X connect 27 1 26 0;
+#X connect 27 2 19 0;
+#X connect 36 0 27 0;

@@ -1,12 +1,64 @@
-#N canvas 550 65 450 300 12;
-#X msg 104 87 1;
-#X obj 135 178 print;
-#X msg 181 100 symbol 1;
-#X obj 135 154 any.==;
-#X msg 83 127 1 2 3 a v;
-#X msg 177 128 1 2 3 a v;
-#X connect 0 0 3 0;
-#X connect 2 0 3 1;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X connect 5 0 3 1;
+#N canvas 453 33 818 745 12;
+#X msg 83 285 1;
+#X obj 153 406 print;
+#X obj 135 374 any.==;
+#X msg 83 307 1 2 3 a v;
+#X msg 197 310 1 2 3 a v;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 137 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 83 157 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 201 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 207 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 251 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 -1 cnv 3 800 3 empty empty any.== 14 14 1 16 -128992 -66577
+0;
+#X text 32 48 tests if two data types (floats \, symbols and lists)
+are equal;
+#X msg 623 461 symbol list;
+#X msg 193 334 symbol a;
+#X msg 623 483 symbol bang;
+#X msg 623 506 symbol float;
+#X msg 623 528 symbol symbol;
+#X msg 196 288 1;
+#X msg 30 547 symbol list;
+#X msg 83 330 symbol a;
+#X msg 30 569 symbol bang;
+#X msg 30 592 symbol float;
+#X msg 30 614 symbol symbol;
+#X msg 30 519 symbol b;
+#X msg 99 495 a;
+#X msg 623 432 symbol b;
+#X floatatom 133 466 5 0 0 0 - - -;
+#X msg 49 359 a;
+#X text 105 207 1 (equal) / 0 (unequal);
+#X text 103 137 float \, symbol or list;
+#X text 104 157 float \, symbol or list;
+#X obj 621 40 plnf_version;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 1;
+#X connect 14 0 2 1;
+#X connect 15 0 2 1;
+#X connect 16 0 2 1;
+#X connect 17 0 2 1;
+#X connect 18 0 2 1;
+#X connect 19 0 2 1;
+#X connect 20 0 2 0;
+#X connect 21 0 2 0;
+#X connect 22 0 2 0;
+#X connect 23 0 2 0;
+#X connect 24 0 2 0;
+#X connect 25 0 2 0;
+#X connect 26 0 2 0;
+#X connect 27 0 2 1;
+#X connect 28 0 2 0;
+#X connect 29 0 2 0;

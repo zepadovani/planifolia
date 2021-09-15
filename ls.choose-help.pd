@@ -1,12 +1,54 @@
-#N canvas 506 49 998 621 12;
-#X obj 188 261 ls.choose;
-#X obj 186 292 print a;
-#X obj 196 322 print b;
-#X text 250 324 index;
-#X text 240 294 element;
-#X msg 198 171 a b c d e;
-#X msg 243 231 10 20 30 40 50;
+#N canvas 472 23 822 798 12;
+#X obj 68 598 ls.choose;
+#X obj 68 649 print a;
+#X obj 128 622 print b;
+#X text 182 624 index;
+#X text 122 651 element;
+#X msg 72 367 10 20 30 40 50;
+#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
+-66577 0;
+#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 137 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X obj 1 311 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
+;
+#X obj 1 -1 cnv 3 800 3 empty empty ls.choose 14 14 1 16 -128992 -66577
+0;
+#X obj 621 40 plnf_version;
+#X obj 1 241 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
+;
+#X obj 83 247 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
+;
+#X text 103 157 bang: chooses element of stored (or last) list;
+#X text 103 137 list: sets list and automatically chooses element;
+#X text 103 177 seed: sets random seed;
+#X obj 83 207 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X text 103 207 list: changes stored list (does not output choosed
+element);
+#X text 32 48 chooses random element of a list and returns element
+(left outlet) and index (right outlet);
+#X msg 60 342 list a b c d e;
+#X msg 124 394 seed 23;
+#X obj 164 430 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 144 563 6 7 8 9;
+#X msg 160 472 a b c d e;
+#X text 183 356 sets list and automatically chooses element;
+#X text 183 392 set random seed;
+#X text 183 428 chooses new element;
+#X text 234 471 non lists are converted to lists;
+#X text 214 560 change stored list (no output);
+#X text 105 247 element;
+#X obj 83 270 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
+;
+#X text 105 270 index of element in the list;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 5 0 0 0;
-#X connect 6 0 0 0;
+#X connect 20 0 0 0;
+#X connect 21 0 0 0;
+#X connect 22 0 0 0;
+#X connect 23 0 0 1;
+#X connect 24 0 0 0;

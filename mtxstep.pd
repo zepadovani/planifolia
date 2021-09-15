@@ -1,266 +1,266 @@
 #N canvas 0 23 1133 855 12;
 #X obj 3719 2488 inlet;
 #N canvas 0 23 450 300 \$0-matrix 0;
-#X obj 0 2 tgl 15 0 1555-stog-0 1555-rtog-0 empty 17 7 0 10 -91543
+#X obj 0 2 tgl 15 0 1558-stog-0 1558-rtog-0 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 15 2 tgl 15 0 1555-stog-1 1555-rtog-1 empty 17 7 0 10 -91543
+#X obj 15 2 tgl 15 0 1558-stog-1 1558-rtog-1 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 30 2 tgl 15 0 1555-stog-2 1555-rtog-2 empty 17 7 0 10 -91543
+#X obj 30 2 tgl 15 0 1558-stog-2 1558-rtog-2 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 45 2 tgl 15 0 1555-stog-3 1555-rtog-3 empty 17 7 0 10 -91543
+#X obj 45 2 tgl 15 0 1558-stog-3 1558-rtog-3 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 60 2 tgl 15 0 1555-stog-4 1555-rtog-4 empty 17 7 0 10 -91543
+#X obj 60 2 tgl 15 0 1558-stog-4 1558-rtog-4 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 75 2 tgl 15 0 1555-stog-5 1555-rtog-5 empty 17 7 0 10 -91543
+#X obj 75 2 tgl 15 0 1558-stog-5 1558-rtog-5 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 90 2 tgl 15 0 1555-stog-6 1555-rtog-6 empty 17 7 0 10 -91543
+#X obj 90 2 tgl 15 0 1558-stog-6 1558-rtog-6 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 105 2 tgl 15 0 1555-stog-7 1555-rtog-7 empty 17 7 0 10 -91543
+#X obj 105 2 tgl 15 0 1558-stog-7 1558-rtog-7 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 120 2 tgl 15 0 1555-stog-8 1555-rtog-8 empty 17 7 0 10 -91543
+#X obj 120 2 tgl 15 0 1558-stog-8 1558-rtog-8 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 135 2 tgl 15 0 1555-stog-9 1555-rtog-9 empty 17 7 0 10 -91543
+#X obj 135 2 tgl 15 0 1558-stog-9 1558-rtog-9 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 150 2 tgl 15 0 1555-stog-10 1555-rtog-10 empty 17 7 0 10 -91543
+#X obj 150 2 tgl 15 0 1558-stog-10 1558-rtog-10 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 165 2 tgl 15 0 1555-stog-11 1555-rtog-11 empty 17 7 0 10 -91543
+#X obj 165 2 tgl 15 0 1558-stog-11 1558-rtog-11 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 180 2 tgl 15 0 1555-stog-12 1555-rtog-12 empty 17 7 0 10 -91543
+#X obj 180 2 tgl 15 0 1558-stog-12 1558-rtog-12 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 195 2 tgl 15 0 1555-stog-13 1555-rtog-13 empty 17 7 0 10 -91543
+#X obj 195 2 tgl 15 0 1558-stog-13 1558-rtog-13 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 210 2 tgl 15 0 1555-stog-14 1555-rtog-14 empty 17 7 0 10 -91543
+#X obj 210 2 tgl 15 0 1558-stog-14 1558-rtog-14 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 225 2 tgl 15 0 1555-stog-15 1555-rtog-15 empty 17 7 0 10 -91543
+#X obj 225 2 tgl 15 0 1558-stog-15 1558-rtog-15 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 0 17 tgl 15 0 1555-stog-16 1555-rtog-16 empty 17 7 0 10 -91543
+#X obj 0 17 tgl 15 0 1558-stog-16 1558-rtog-16 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 15 17 tgl 15 0 1555-stog-17 1555-rtog-17 empty 17 7 0 10 -91543
+#X obj 15 17 tgl 15 0 1558-stog-17 1558-rtog-17 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 30 17 tgl 15 0 1555-stog-18 1555-rtog-18 empty 17 7 0 10 -91543
+#X obj 30 17 tgl 15 0 1558-stog-18 1558-rtog-18 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 45 17 tgl 15 0 1555-stog-19 1555-rtog-19 empty 17 7 0 10 -91543
+#X obj 45 17 tgl 15 0 1558-stog-19 1558-rtog-19 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 60 17 tgl 15 0 1555-stog-20 1555-rtog-20 empty 17 7 0 10 -91543
+#X obj 60 17 tgl 15 0 1558-stog-20 1558-rtog-20 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 75 17 tgl 15 0 1555-stog-21 1555-rtog-21 empty 17 7 0 10 -91543
+#X obj 75 17 tgl 15 0 1558-stog-21 1558-rtog-21 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 90 17 tgl 15 0 1555-stog-22 1555-rtog-22 empty 17 7 0 10 -91543
+#X obj 90 17 tgl 15 0 1558-stog-22 1558-rtog-22 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 105 17 tgl 15 0 1555-stog-23 1555-rtog-23 empty 17 7 0 10 -91543
+#X obj 105 17 tgl 15 0 1558-stog-23 1558-rtog-23 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 120 17 tgl 15 0 1555-stog-24 1555-rtog-24 empty 17 7 0 10 -91543
+#X obj 120 17 tgl 15 0 1558-stog-24 1558-rtog-24 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 135 17 tgl 15 0 1555-stog-25 1555-rtog-25 empty 17 7 0 10 -91543
+#X obj 135 17 tgl 15 0 1558-stog-25 1558-rtog-25 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 150 17 tgl 15 0 1555-stog-26 1555-rtog-26 empty 17 7 0 10 -91543
+#X obj 150 17 tgl 15 0 1558-stog-26 1558-rtog-26 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 165 17 tgl 15 0 1555-stog-27 1555-rtog-27 empty 17 7 0 10 -91543
+#X obj 165 17 tgl 15 0 1558-stog-27 1558-rtog-27 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 180 17 tgl 15 0 1555-stog-28 1555-rtog-28 empty 17 7 0 10 -91543
+#X obj 180 17 tgl 15 0 1558-stog-28 1558-rtog-28 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 195 17 tgl 15 0 1555-stog-29 1555-rtog-29 empty 17 7 0 10 -91543
+#X obj 195 17 tgl 15 0 1558-stog-29 1558-rtog-29 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 210 17 tgl 15 0 1555-stog-30 1555-rtog-30 empty 17 7 0 10 -91543
+#X obj 210 17 tgl 15 0 1558-stog-30 1558-rtog-30 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 225 17 tgl 15 0 1555-stog-31 1555-rtog-31 empty 17 7 0 10 -91543
+#X obj 225 17 tgl 15 0 1558-stog-31 1558-rtog-31 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 0 32 tgl 15 0 1555-stog-32 1555-rtog-32 empty 17 7 0 10 -91543
+#X obj 0 32 tgl 15 0 1558-stog-32 1558-rtog-32 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 15 32 tgl 15 0 1555-stog-33 1555-rtog-33 empty 17 7 0 10 -91543
+#X obj 15 32 tgl 15 0 1558-stog-33 1558-rtog-33 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 30 32 tgl 15 0 1555-stog-34 1555-rtog-34 empty 17 7 0 10 -91543
+#X obj 30 32 tgl 15 0 1558-stog-34 1558-rtog-34 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 45 32 tgl 15 0 1555-stog-35 1555-rtog-35 empty 17 7 0 10 -91543
+#X obj 45 32 tgl 15 0 1558-stog-35 1558-rtog-35 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 60 32 tgl 15 0 1555-stog-36 1555-rtog-36 empty 17 7 0 10 -91543
+#X obj 60 32 tgl 15 0 1558-stog-36 1558-rtog-36 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 75 32 tgl 15 0 1555-stog-37 1555-rtog-37 empty 17 7 0 10 -91543
+#X obj 75 32 tgl 15 0 1558-stog-37 1558-rtog-37 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 90 32 tgl 15 0 1555-stog-38 1555-rtog-38 empty 17 7 0 10 -91543
+#X obj 90 32 tgl 15 0 1558-stog-38 1558-rtog-38 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 105 32 tgl 15 0 1555-stog-39 1555-rtog-39 empty 17 7 0 10 -91543
+#X obj 105 32 tgl 15 0 1558-stog-39 1558-rtog-39 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 120 32 tgl 15 0 1555-stog-40 1555-rtog-40 empty 17 7 0 10 -91543
+#X obj 120 32 tgl 15 0 1558-stog-40 1558-rtog-40 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 135 32 tgl 15 0 1555-stog-41 1555-rtog-41 empty 17 7 0 10 -91543
+#X obj 135 32 tgl 15 0 1558-stog-41 1558-rtog-41 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 150 32 tgl 15 0 1555-stog-42 1555-rtog-42 empty 17 7 0 10 -91543
+#X obj 150 32 tgl 15 0 1558-stog-42 1558-rtog-42 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 165 32 tgl 15 0 1555-stog-43 1555-rtog-43 empty 17 7 0 10 -91543
+#X obj 165 32 tgl 15 0 1558-stog-43 1558-rtog-43 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 180 32 tgl 15 0 1555-stog-44 1555-rtog-44 empty 17 7 0 10 -91543
+#X obj 180 32 tgl 15 0 1558-stog-44 1558-rtog-44 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 195 32 tgl 15 0 1555-stog-45 1555-rtog-45 empty 17 7 0 10 -91543
+#X obj 195 32 tgl 15 0 1558-stog-45 1558-rtog-45 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 210 32 tgl 15 0 1555-stog-46 1555-rtog-46 empty 17 7 0 10 -91543
+#X obj 210 32 tgl 15 0 1558-stog-46 1558-rtog-46 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 225 32 tgl 15 0 1555-stog-47 1555-rtog-47 empty 17 7 0 10 -91543
+#X obj 225 32 tgl 15 0 1558-stog-47 1558-rtog-47 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 0 47 tgl 15 0 1555-stog-48 1555-rtog-48 empty 17 7 0 10 -91543
+#X obj 0 47 tgl 15 0 1558-stog-48 1558-rtog-48 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 15 47 tgl 15 0 1555-stog-49 1555-rtog-49 empty 17 7 0 10 -91543
+#X obj 15 47 tgl 15 0 1558-stog-49 1558-rtog-49 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 30 47 tgl 15 0 1555-stog-50 1555-rtog-50 empty 17 7 0 10 -91543
+#X obj 30 47 tgl 15 0 1558-stog-50 1558-rtog-50 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 45 47 tgl 15 0 1555-stog-51 1555-rtog-51 empty 17 7 0 10 -91543
+#X obj 45 47 tgl 15 0 1558-stog-51 1558-rtog-51 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 60 47 tgl 15 0 1555-stog-52 1555-rtog-52 empty 17 7 0 10 -91543
+#X obj 60 47 tgl 15 0 1558-stog-52 1558-rtog-52 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 75 47 tgl 15 0 1555-stog-53 1555-rtog-53 empty 17 7 0 10 -91543
+#X obj 75 47 tgl 15 0 1558-stog-53 1558-rtog-53 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 90 47 tgl 15 0 1555-stog-54 1555-rtog-54 empty 17 7 0 10 -91543
+#X obj 90 47 tgl 15 0 1558-stog-54 1558-rtog-54 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 105 47 tgl 15 0 1555-stog-55 1555-rtog-55 empty 17 7 0 10 -91543
+#X obj 105 47 tgl 15 0 1558-stog-55 1558-rtog-55 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 120 47 tgl 15 0 1555-stog-56 1555-rtog-56 empty 17 7 0 10 -91543
+#X obj 120 47 tgl 15 0 1558-stog-56 1558-rtog-56 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 135 47 tgl 15 0 1555-stog-57 1555-rtog-57 empty 17 7 0 10 -91543
+#X obj 135 47 tgl 15 0 1558-stog-57 1558-rtog-57 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 150 47 tgl 15 0 1555-stog-58 1555-rtog-58 empty 17 7 0 10 -91543
+#X obj 150 47 tgl 15 0 1558-stog-58 1558-rtog-58 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 165 47 tgl 15 0 1555-stog-59 1555-rtog-59 empty 17 7 0 10 -91543
+#X obj 165 47 tgl 15 0 1558-stog-59 1558-rtog-59 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 180 47 tgl 15 0 1555-stog-60 1555-rtog-60 empty 17 7 0 10 -91543
+#X obj 180 47 tgl 15 0 1558-stog-60 1558-rtog-60 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 195 47 tgl 15 0 1555-stog-61 1555-rtog-61 empty 17 7 0 10 -91543
+#X obj 195 47 tgl 15 0 1558-stog-61 1558-rtog-61 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 210 47 tgl 15 0 1555-stog-62 1555-rtog-62 empty 17 7 0 10 -91543
+#X obj 210 47 tgl 15 0 1558-stog-62 1558-rtog-62 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 225 47 tgl 15 0 1555-stog-63 1555-rtog-63 empty 17 7 0 10 -91543
+#X obj 225 47 tgl 15 0 1558-stog-63 1558-rtog-63 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 0 62 tgl 15 0 1555-stog-64 1555-rtog-64 empty 17 7 0 10 -91543
+#X obj 0 62 tgl 15 0 1558-stog-64 1558-rtog-64 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 15 62 tgl 15 0 1555-stog-65 1555-rtog-65 empty 17 7 0 10 -91543
+#X obj 15 62 tgl 15 0 1558-stog-65 1558-rtog-65 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 30 62 tgl 15 0 1555-stog-66 1555-rtog-66 empty 17 7 0 10 -91543
+#X obj 30 62 tgl 15 0 1558-stog-66 1558-rtog-66 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 45 62 tgl 15 0 1555-stog-67 1555-rtog-67 empty 17 7 0 10 -91543
+#X obj 45 62 tgl 15 0 1558-stog-67 1558-rtog-67 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 60 62 tgl 15 0 1555-stog-68 1555-rtog-68 empty 17 7 0 10 -91543
+#X obj 60 62 tgl 15 0 1558-stog-68 1558-rtog-68 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 75 62 tgl 15 0 1555-stog-69 1555-rtog-69 empty 17 7 0 10 -91543
+#X obj 75 62 tgl 15 0 1558-stog-69 1558-rtog-69 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 90 62 tgl 15 0 1555-stog-70 1555-rtog-70 empty 17 7 0 10 -91543
+#X obj 90 62 tgl 15 0 1558-stog-70 1558-rtog-70 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 105 62 tgl 15 0 1555-stog-71 1555-rtog-71 empty 17 7 0 10 -91543
+#X obj 105 62 tgl 15 0 1558-stog-71 1558-rtog-71 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 120 62 tgl 15 0 1555-stog-72 1555-rtog-72 empty 17 7 0 10 -91543
+#X obj 120 62 tgl 15 0 1558-stog-72 1558-rtog-72 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 135 62 tgl 15 0 1555-stog-73 1555-rtog-73 empty 17 7 0 10 -91543
+#X obj 135 62 tgl 15 0 1558-stog-73 1558-rtog-73 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 150 62 tgl 15 0 1555-stog-74 1555-rtog-74 empty 17 7 0 10 -91543
+#X obj 150 62 tgl 15 0 1558-stog-74 1558-rtog-74 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 165 62 tgl 15 0 1555-stog-75 1555-rtog-75 empty 17 7 0 10 -91543
+#X obj 165 62 tgl 15 0 1558-stog-75 1558-rtog-75 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 180 62 tgl 15 0 1555-stog-76 1555-rtog-76 empty 17 7 0 10 -91543
+#X obj 180 62 tgl 15 0 1558-stog-76 1558-rtog-76 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 195 62 tgl 15 0 1555-stog-77 1555-rtog-77 empty 17 7 0 10 -91543
+#X obj 195 62 tgl 15 0 1558-stog-77 1558-rtog-77 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 210 62 tgl 15 0 1555-stog-78 1555-rtog-78 empty 17 7 0 10 -91543
+#X obj 210 62 tgl 15 0 1558-stog-78 1558-rtog-78 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 225 62 tgl 15 0 1555-stog-79 1555-rtog-79 empty 17 7 0 10 -91543
+#X obj 225 62 tgl 15 0 1558-stog-79 1558-rtog-79 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 0 77 tgl 15 0 1555-stog-80 1555-rtog-80 empty 17 7 0 10 -91543
+#X obj 0 77 tgl 15 0 1558-stog-80 1558-rtog-80 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 15 77 tgl 15 0 1555-stog-81 1555-rtog-81 empty 17 7 0 10 -91543
+#X obj 15 77 tgl 15 0 1558-stog-81 1558-rtog-81 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 30 77 tgl 15 0 1555-stog-82 1555-rtog-82 empty 17 7 0 10 -91543
+#X obj 30 77 tgl 15 0 1558-stog-82 1558-rtog-82 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 45 77 tgl 15 0 1555-stog-83 1555-rtog-83 empty 17 7 0 10 -91543
+#X obj 45 77 tgl 15 0 1558-stog-83 1558-rtog-83 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 60 77 tgl 15 0 1555-stog-84 1555-rtog-84 empty 17 7 0 10 -91543
+#X obj 60 77 tgl 15 0 1558-stog-84 1558-rtog-84 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 75 77 tgl 15 0 1555-stog-85 1555-rtog-85 empty 17 7 0 10 -91543
+#X obj 75 77 tgl 15 0 1558-stog-85 1558-rtog-85 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 90 77 tgl 15 0 1555-stog-86 1555-rtog-86 empty 17 7 0 10 -91543
+#X obj 90 77 tgl 15 0 1558-stog-86 1558-rtog-86 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 105 77 tgl 15 0 1555-stog-87 1555-rtog-87 empty 17 7 0 10 -91543
+#X obj 105 77 tgl 15 0 1558-stog-87 1558-rtog-87 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 120 77 tgl 15 0 1555-stog-88 1555-rtog-88 empty 17 7 0 10 -91543
+#X obj 120 77 tgl 15 0 1558-stog-88 1558-rtog-88 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 135 77 tgl 15 0 1555-stog-89 1555-rtog-89 empty 17 7 0 10 -91543
+#X obj 135 77 tgl 15 0 1558-stog-89 1558-rtog-89 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 150 77 tgl 15 0 1555-stog-90 1555-rtog-90 empty 17 7 0 10 -91543
+#X obj 150 77 tgl 15 0 1558-stog-90 1558-rtog-90 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 165 77 tgl 15 0 1555-stog-91 1555-rtog-91 empty 17 7 0 10 -91543
+#X obj 165 77 tgl 15 0 1558-stog-91 1558-rtog-91 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 180 77 tgl 15 0 1555-stog-92 1555-rtog-92 empty 17 7 0 10 -91543
+#X obj 180 77 tgl 15 0 1558-stog-92 1558-rtog-92 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 195 77 tgl 15 0 1555-stog-93 1555-rtog-93 empty 17 7 0 10 -91543
+#X obj 195 77 tgl 15 0 1558-stog-93 1558-rtog-93 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 210 77 tgl 15 0 1555-stog-94 1555-rtog-94 empty 17 7 0 10 -91543
+#X obj 210 77 tgl 15 0 1558-stog-94 1558-rtog-94 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 225 77 tgl 15 0 1555-stog-95 1555-rtog-95 empty 17 7 0 10 -91543
+#X obj 225 77 tgl 15 0 1558-stog-95 1558-rtog-95 empty 17 7 0 10 -91543
 -91543 -91543 0 1;
-#X obj 0 92 tgl 15 0 1555-stog-96 1555-rtog-96 empty 17 7 0 10 -91543
+#X obj 0 92 tgl 15 0 1558-stog-96 1558-rtog-96 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 15 92 tgl 15 0 1555-stog-97 1555-rtog-97 empty 17 7 0 10 -91543
+#X obj 15 92 tgl 15 0 1558-stog-97 1558-rtog-97 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 30 92 tgl 15 0 1555-stog-98 1555-rtog-98 empty 17 7 0 10 -91543
+#X obj 30 92 tgl 15 0 1558-stog-98 1558-rtog-98 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 45 92 tgl 15 0 1555-stog-99 1555-rtog-99 empty 17 7 0 10 -91543
+#X obj 45 92 tgl 15 0 1558-stog-99 1558-rtog-99 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 60 92 tgl 15 0 1555-stog-100 1555-rtog-100 empty 17 7 0 10 -91543
+#X obj 60 92 tgl 15 0 1558-stog-100 1558-rtog-100 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 75 92 tgl 15 0 1555-stog-101 1555-rtog-101 empty 17 7 0 10 -91543
+#X obj 75 92 tgl 15 0 1558-stog-101 1558-rtog-101 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 90 92 tgl 15 0 1555-stog-102 1555-rtog-102 empty 17 7 0 10 -91543
+#X obj 90 92 tgl 15 0 1558-stog-102 1558-rtog-102 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 105 92 tgl 15 0 1555-stog-103 1555-rtog-103 empty 17 7 0 10
+#X obj 105 92 tgl 15 0 1558-stog-103 1558-rtog-103 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 120 92 tgl 15 0 1555-stog-104 1555-rtog-104 empty 17 7 0 10
+#X obj 120 92 tgl 15 0 1558-stog-104 1558-rtog-104 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 135 92 tgl 15 0 1555-stog-105 1555-rtog-105 empty 17 7 0 10
+#X obj 135 92 tgl 15 0 1558-stog-105 1558-rtog-105 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 150 92 tgl 15 0 1555-stog-106 1555-rtog-106 empty 17 7 0 10
+#X obj 150 92 tgl 15 0 1558-stog-106 1558-rtog-106 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 165 92 tgl 15 0 1555-stog-107 1555-rtog-107 empty 17 7 0 10
+#X obj 165 92 tgl 15 0 1558-stog-107 1558-rtog-107 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 180 92 tgl 15 0 1555-stog-108 1555-rtog-108 empty 17 7 0 10
+#X obj 180 92 tgl 15 0 1558-stog-108 1558-rtog-108 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 195 92 tgl 15 0 1555-stog-109 1555-rtog-109 empty 17 7 0 10
+#X obj 195 92 tgl 15 0 1558-stog-109 1558-rtog-109 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 210 92 tgl 15 0 1555-stog-110 1555-rtog-110 empty 17 7 0 10
+#X obj 210 92 tgl 15 0 1558-stog-110 1558-rtog-110 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 225 92 tgl 15 0 1555-stog-111 1555-rtog-111 empty 17 7 0 10
+#X obj 225 92 tgl 15 0 1558-stog-111 1558-rtog-111 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 0 107 tgl 15 0 1555-stog-112 1555-rtog-112 empty 17 7 0 10 -91543
+#X obj 0 107 tgl 15 0 1558-stog-112 1558-rtog-112 empty 17 7 0 10 -91543
 -91543 -91543 1 1;
-#X obj 15 107 tgl 15 0 1555-stog-113 1555-rtog-113 empty 17 7 0 10
+#X obj 15 107 tgl 15 0 1558-stog-113 1558-rtog-113 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
-#X obj 30 107 tgl 15 0 1555-stog-114 1555-rtog-114 empty 17 7 0 10
+#X obj 30 107 tgl 15 0 1558-stog-114 1558-rtog-114 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 45 107 tgl 15 0 1555-stog-115 1555-rtog-115 empty 17 7 0 10
+#X obj 45 107 tgl 15 0 1558-stog-115 1558-rtog-115 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
-#X obj 60 107 tgl 15 0 1555-stog-116 1555-rtog-116 empty 17 7 0 10
+#X obj 60 107 tgl 15 0 1558-stog-116 1558-rtog-116 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 75 107 tgl 15 0 1555-stog-117 1555-rtog-117 empty 17 7 0 10
+#X obj 75 107 tgl 15 0 1558-stog-117 1558-rtog-117 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
-#X obj 90 107 tgl 15 0 1555-stog-118 1555-rtog-118 empty 17 7 0 10
+#X obj 90 107 tgl 15 0 1558-stog-118 1558-rtog-118 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
-#X obj 105 107 tgl 15 0 1555-stog-119 1555-rtog-119 empty 17 7 0 10
+#X obj 105 107 tgl 15 0 1558-stog-119 1558-rtog-119 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
-#X obj 120 107 tgl 15 0 1555-stog-120 1555-rtog-120 empty 17 7 0 10
+#X obj 120 107 tgl 15 0 1558-stog-120 1558-rtog-120 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
-#X obj 135 107 tgl 15 0 1555-stog-121 1555-rtog-121 empty 17 7 0 10
+#X obj 135 107 tgl 15 0 1558-stog-121 1558-rtog-121 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
-#X obj 150 107 tgl 15 0 1555-stog-122 1555-rtog-122 empty 17 7 0 10
+#X obj 150 107 tgl 15 0 1558-stog-122 1558-rtog-122 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 165 107 tgl 15 0 1555-stog-123 1555-rtog-123 empty 17 7 0 10
+#X obj 165 107 tgl 15 0 1558-stog-123 1558-rtog-123 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
-#X obj 180 107 tgl 15 0 1555-stog-124 1555-rtog-124 empty 17 7 0 10
+#X obj 180 107 tgl 15 0 1558-stog-124 1558-rtog-124 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 195 107 tgl 15 0 1555-stog-125 1555-rtog-125 empty 17 7 0 10
+#X obj 195 107 tgl 15 0 1558-stog-125 1558-rtog-125 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
-#X obj 210 107 tgl 15 0 1555-stog-126 1555-rtog-126 empty 17 7 0 10
+#X obj 210 107 tgl 15 0 1558-stog-126 1558-rtog-126 empty 17 7 0 10
 -91543 -91543 -91543 1 1;
-#X obj 225 107 tgl 15 0 1555-stog-127 1555-rtog-127 empty 17 7 0 10
+#X obj 225 107 tgl 15 0 1558-stog-127 1558-rtog-127 empty 17 7 0 10
 -91543 -91543 -91543 0 1;
 #X coords 0 -1 1 1 240 124 2 0 0;
 #X restore 0 0 pd \$0-matrix;
 #N canvas 0 53 417 99 \$0-toggs 0;
-#X obj 10 10 clone mtxgui_auxabs 128 1555;
+#X obj 10 10 clone mtxgui_auxabs 128 1558;
 #X restore 3719 2701 pd \$0-toggs;
 #X obj 3719 2680 namecanvas \$0-mtxgui;
 #N canvas 406 113 894 560 arg_management 0;
@@ -315,8 +315,8 @@ A mtxgui was created with the default values: 3 4 13;
 #X connect 20 0 17 1;
 #X restore 3719 2552 pd arg_management;
 #N canvas 661 203 450 300 \$0-cloneplace 0;
-#X obj 10 10 clone -s 1 mtxstepseq_auxabs 8 1555 row;
-#X obj 10 40 clone -s 1 mtxstepseq_auxabs 16 1555 col;
+#X obj 10 10 clone -s 1 mtxstepseq_auxabs 8 1558 row;
+#X obj 10 40 clone -s 1 mtxstepseq_auxabs 16 1558 col;
 #X restore 3719 2722 pd \$0-cloneplace;
 #N canvas 0 23 1440 855 tempocalc 0;
 #X obj 46 -27 r \$0-ms;
@@ -667,134 +667,134 @@ A mtxgui was created with the default values: 3 4 13;
 #X obj 3719 2765 table \$0-acellsrow \$1;
 #X obj 3719 2787 table \$0-acellscol \$2;
 #N canvas 661 203 450 300 \$0-cvals 0;
-#X obj 10 10 array define -yrange 0 255 1555-cval-0 19;
-#X obj 10 36 array define -yrange 0 255 1555-cval-1 19;
-#X obj 10 62 array define -yrange 0 255 1555-cval-2 19;
-#X obj 10 88 array define -yrange 0 255 1555-cval-3 19;
-#X obj 10 114 array define -yrange 0 255 1555-cval-4 19;
-#X obj 10 140 array define -yrange 0 255 1555-cval-5 19;
-#X obj 10 166 array define -yrange 0 255 1555-cval-6 19;
-#X obj 10 192 array define -yrange 0 255 1555-cval-7 19;
-#X obj 10 218 array define -yrange 0 255 1555-cval-8 19;
-#X obj 10 244 array define -yrange 0 255 1555-cval-9 19;
-#X obj 10 270 array define -yrange 0 255 1555-cval-10 19;
-#X obj 10 296 array define -yrange 0 255 1555-cval-11 19;
-#X obj 10 322 array define -yrange 0 255 1555-cval-12 19;
-#X obj 10 348 array define -yrange 0 255 1555-cval-13 19;
-#X obj 10 374 array define -yrange 0 255 1555-cval-14 19;
-#X obj 10 400 array define -yrange 0 255 1555-cval-15 19;
-#X obj 10 426 array define -yrange 0 255 1555-cval-16 19;
-#X obj 10 452 array define -yrange 0 255 1555-cval-17 19;
-#X obj 10 478 array define -yrange 0 255 1555-cval-18 19;
-#X obj 10 504 array define -yrange 0 255 1555-cval-19 19;
-#X obj 10 530 array define -yrange 0 255 1555-cval-20 19;
-#X obj 10 556 array define -yrange 0 255 1555-cval-21 19;
-#X obj 10 582 array define -yrange 0 255 1555-cval-22 19;
-#X obj 10 608 array define -yrange 0 255 1555-cval-23 19;
-#X obj 10 634 array define -yrange 0 255 1555-cval-24 19;
-#X obj 10 660 array define -yrange 0 255 1555-cval-25 19;
-#X obj 10 686 array define -yrange 0 255 1555-cval-26 19;
-#X obj 10 712 array define -yrange 0 255 1555-cval-27 19;
-#X obj 10 738 array define -yrange 0 255 1555-cval-28 19;
-#X obj 10 764 array define -yrange 0 255 1555-cval-29 19;
-#X obj 10 790 array define -yrange 0 255 1555-cval-30 19;
-#X obj 10 816 array define -yrange 0 255 1555-cval-31 19;
-#X obj 10 842 array define -yrange 0 255 1555-cval-32 19;
-#X obj 10 868 array define -yrange 0 255 1555-cval-33 19;
-#X obj 10 894 array define -yrange 0 255 1555-cval-34 19;
-#X obj 10 920 array define -yrange 0 255 1555-cval-35 19;
-#X obj 10 946 array define -yrange 0 255 1555-cval-36 19;
-#X obj 10 972 array define -yrange 0 255 1555-cval-37 19;
-#X obj 10 998 array define -yrange 0 255 1555-cval-38 19;
-#X obj 10 1024 array define -yrange 0 255 1555-cval-39 19;
-#X obj 10 1050 array define -yrange 0 255 1555-cval-40 19;
-#X obj 10 1076 array define -yrange 0 255 1555-cval-41 19;
-#X obj 10 1102 array define -yrange 0 255 1555-cval-42 19;
-#X obj 10 1128 array define -yrange 0 255 1555-cval-43 19;
-#X obj 10 1154 array define -yrange 0 255 1555-cval-44 19;
-#X obj 10 1180 array define -yrange 0 255 1555-cval-45 19;
-#X obj 10 1206 array define -yrange 0 255 1555-cval-46 19;
-#X obj 10 1232 array define -yrange 0 255 1555-cval-47 19;
-#X obj 10 1258 array define -yrange 0 255 1555-cval-48 19;
-#X obj 10 1284 array define -yrange 0 255 1555-cval-49 19;
-#X obj 10 1310 array define -yrange 0 255 1555-cval-50 19;
-#X obj 10 1336 array define -yrange 0 255 1555-cval-51 19;
-#X obj 10 1362 array define -yrange 0 255 1555-cval-52 19;
-#X obj 10 1388 array define -yrange 0 255 1555-cval-53 19;
-#X obj 10 1414 array define -yrange 0 255 1555-cval-54 19;
-#X obj 10 1440 array define -yrange 0 255 1555-cval-55 19;
-#X obj 10 1466 array define -yrange 0 255 1555-cval-56 19;
-#X obj 10 1492 array define -yrange 0 255 1555-cval-57 19;
-#X obj 10 1518 array define -yrange 0 255 1555-cval-58 19;
-#X obj 10 1544 array define -yrange 0 255 1555-cval-59 19;
-#X obj 10 1570 array define -yrange 0 255 1555-cval-60 19;
-#X obj 10 1596 array define -yrange 0 255 1555-cval-61 19;
-#X obj 10 1622 array define -yrange 0 255 1555-cval-62 19;
-#X obj 10 1648 array define -yrange 0 255 1555-cval-63 19;
-#X obj 10 1674 array define -yrange 0 255 1555-cval-64 19;
-#X obj 10 1700 array define -yrange 0 255 1555-cval-65 19;
-#X obj 10 1726 array define -yrange 0 255 1555-cval-66 19;
-#X obj 10 1752 array define -yrange 0 255 1555-cval-67 19;
-#X obj 10 1778 array define -yrange 0 255 1555-cval-68 19;
-#X obj 10 1804 array define -yrange 0 255 1555-cval-69 19;
-#X obj 10 1830 array define -yrange 0 255 1555-cval-70 19;
-#X obj 10 1856 array define -yrange 0 255 1555-cval-71 19;
-#X obj 10 1882 array define -yrange 0 255 1555-cval-72 19;
-#X obj 10 1908 array define -yrange 0 255 1555-cval-73 19;
-#X obj 10 1934 array define -yrange 0 255 1555-cval-74 19;
-#X obj 10 1960 array define -yrange 0 255 1555-cval-75 19;
-#X obj 10 1986 array define -yrange 0 255 1555-cval-76 19;
-#X obj 10 2012 array define -yrange 0 255 1555-cval-77 19;
-#X obj 10 2038 array define -yrange 0 255 1555-cval-78 19;
-#X obj 10 2064 array define -yrange 0 255 1555-cval-79 19;
-#X obj 10 2090 array define -yrange 0 255 1555-cval-80 19;
-#X obj 10 2116 array define -yrange 0 255 1555-cval-81 19;
-#X obj 10 2142 array define -yrange 0 255 1555-cval-82 19;
-#X obj 10 2168 array define -yrange 0 255 1555-cval-83 19;
-#X obj 10 2194 array define -yrange 0 255 1555-cval-84 19;
-#X obj 10 2220 array define -yrange 0 255 1555-cval-85 19;
-#X obj 10 2246 array define -yrange 0 255 1555-cval-86 19;
-#X obj 10 2272 array define -yrange 0 255 1555-cval-87 19;
-#X obj 10 2298 array define -yrange 0 255 1555-cval-88 19;
-#X obj 10 2324 array define -yrange 0 255 1555-cval-89 19;
-#X obj 10 2350 array define -yrange 0 255 1555-cval-90 19;
-#X obj 10 2376 array define -yrange 0 255 1555-cval-91 19;
-#X obj 10 2402 array define -yrange 0 255 1555-cval-92 19;
-#X obj 10 2428 array define -yrange 0 255 1555-cval-93 19;
-#X obj 10 2454 array define -yrange 0 255 1555-cval-94 19;
-#X obj 10 2480 array define -yrange 0 255 1555-cval-95 19;
-#X obj 10 2506 array define -yrange 0 255 1555-cval-96 19;
-#X obj 10 2532 array define -yrange 0 255 1555-cval-97 19;
-#X obj 10 2558 array define -yrange 0 255 1555-cval-98 19;
-#X obj 10 2584 array define -yrange 0 255 1555-cval-99 19;
-#X obj 10 2610 array define -yrange 0 255 1555-cval-100 19;
-#X obj 10 2636 array define -yrange 0 255 1555-cval-101 19;
-#X obj 10 2662 array define -yrange 0 255 1555-cval-102 19;
-#X obj 10 2688 array define -yrange 0 255 1555-cval-103 19;
-#X obj 10 2714 array define -yrange 0 255 1555-cval-104 19;
-#X obj 10 2740 array define -yrange 0 255 1555-cval-105 19;
-#X obj 10 2766 array define -yrange 0 255 1555-cval-106 19;
-#X obj 10 2792 array define -yrange 0 255 1555-cval-107 19;
-#X obj 10 2818 array define -yrange 0 255 1555-cval-108 19;
-#X obj 10 2844 array define -yrange 0 255 1555-cval-109 19;
-#X obj 10 2870 array define -yrange 0 255 1555-cval-110 19;
-#X obj 10 2896 array define -yrange 0 255 1555-cval-111 19;
-#X obj 10 2922 array define -yrange 0 255 1555-cval-112 19;
-#X obj 10 2948 array define -yrange 0 255 1555-cval-113 19;
-#X obj 10 2974 array define -yrange 0 255 1555-cval-114 19;
-#X obj 10 3000 array define -yrange 0 255 1555-cval-115 19;
-#X obj 10 3026 array define -yrange 0 255 1555-cval-116 19;
-#X obj 10 3052 array define -yrange 0 255 1555-cval-117 19;
-#X obj 10 3078 array define -yrange 0 255 1555-cval-118 19;
-#X obj 10 3104 array define -yrange 0 255 1555-cval-119 19;
-#X obj 10 3130 array define -yrange 0 255 1555-cval-120 19;
-#X obj 10 3156 array define -yrange 0 255 1555-cval-121 19;
-#X obj 10 3182 array define -yrange 0 255 1555-cval-122 19;
-#X obj 10 3208 array define -yrange 0 255 1555-cval-123 19;
-#X obj 10 3234 array define -yrange 0 255 1555-cval-124 19;
-#X obj 10 3260 array define -yrange 0 255 1555-cval-125 19;
-#X obj 10 3286 array define -yrange 0 255 1555-cval-126 19;
-#X obj 10 3312 array define -yrange 0 255 1555-cval-127 19;
+#X obj 10 10 array define -yrange 0 255 1558-cval-0 19;
+#X obj 10 36 array define -yrange 0 255 1558-cval-1 19;
+#X obj 10 62 array define -yrange 0 255 1558-cval-2 19;
+#X obj 10 88 array define -yrange 0 255 1558-cval-3 19;
+#X obj 10 114 array define -yrange 0 255 1558-cval-4 19;
+#X obj 10 140 array define -yrange 0 255 1558-cval-5 19;
+#X obj 10 166 array define -yrange 0 255 1558-cval-6 19;
+#X obj 10 192 array define -yrange 0 255 1558-cval-7 19;
+#X obj 10 218 array define -yrange 0 255 1558-cval-8 19;
+#X obj 10 244 array define -yrange 0 255 1558-cval-9 19;
+#X obj 10 270 array define -yrange 0 255 1558-cval-10 19;
+#X obj 10 296 array define -yrange 0 255 1558-cval-11 19;
+#X obj 10 322 array define -yrange 0 255 1558-cval-12 19;
+#X obj 10 348 array define -yrange 0 255 1558-cval-13 19;
+#X obj 10 374 array define -yrange 0 255 1558-cval-14 19;
+#X obj 10 400 array define -yrange 0 255 1558-cval-15 19;
+#X obj 10 426 array define -yrange 0 255 1558-cval-16 19;
+#X obj 10 452 array define -yrange 0 255 1558-cval-17 19;
+#X obj 10 478 array define -yrange 0 255 1558-cval-18 19;
+#X obj 10 504 array define -yrange 0 255 1558-cval-19 19;
+#X obj 10 530 array define -yrange 0 255 1558-cval-20 19;
+#X obj 10 556 array define -yrange 0 255 1558-cval-21 19;
+#X obj 10 582 array define -yrange 0 255 1558-cval-22 19;
+#X obj 10 608 array define -yrange 0 255 1558-cval-23 19;
+#X obj 10 634 array define -yrange 0 255 1558-cval-24 19;
+#X obj 10 660 array define -yrange 0 255 1558-cval-25 19;
+#X obj 10 686 array define -yrange 0 255 1558-cval-26 19;
+#X obj 10 712 array define -yrange 0 255 1558-cval-27 19;
+#X obj 10 738 array define -yrange 0 255 1558-cval-28 19;
+#X obj 10 764 array define -yrange 0 255 1558-cval-29 19;
+#X obj 10 790 array define -yrange 0 255 1558-cval-30 19;
+#X obj 10 816 array define -yrange 0 255 1558-cval-31 19;
+#X obj 10 842 array define -yrange 0 255 1558-cval-32 19;
+#X obj 10 868 array define -yrange 0 255 1558-cval-33 19;
+#X obj 10 894 array define -yrange 0 255 1558-cval-34 19;
+#X obj 10 920 array define -yrange 0 255 1558-cval-35 19;
+#X obj 10 946 array define -yrange 0 255 1558-cval-36 19;
+#X obj 10 972 array define -yrange 0 255 1558-cval-37 19;
+#X obj 10 998 array define -yrange 0 255 1558-cval-38 19;
+#X obj 10 1024 array define -yrange 0 255 1558-cval-39 19;
+#X obj 10 1050 array define -yrange 0 255 1558-cval-40 19;
+#X obj 10 1076 array define -yrange 0 255 1558-cval-41 19;
+#X obj 10 1102 array define -yrange 0 255 1558-cval-42 19;
+#X obj 10 1128 array define -yrange 0 255 1558-cval-43 19;
+#X obj 10 1154 array define -yrange 0 255 1558-cval-44 19;
+#X obj 10 1180 array define -yrange 0 255 1558-cval-45 19;
+#X obj 10 1206 array define -yrange 0 255 1558-cval-46 19;
+#X obj 10 1232 array define -yrange 0 255 1558-cval-47 19;
+#X obj 10 1258 array define -yrange 0 255 1558-cval-48 19;
+#X obj 10 1284 array define -yrange 0 255 1558-cval-49 19;
+#X obj 10 1310 array define -yrange 0 255 1558-cval-50 19;
+#X obj 10 1336 array define -yrange 0 255 1558-cval-51 19;
+#X obj 10 1362 array define -yrange 0 255 1558-cval-52 19;
+#X obj 10 1388 array define -yrange 0 255 1558-cval-53 19;
+#X obj 10 1414 array define -yrange 0 255 1558-cval-54 19;
+#X obj 10 1440 array define -yrange 0 255 1558-cval-55 19;
+#X obj 10 1466 array define -yrange 0 255 1558-cval-56 19;
+#X obj 10 1492 array define -yrange 0 255 1558-cval-57 19;
+#X obj 10 1518 array define -yrange 0 255 1558-cval-58 19;
+#X obj 10 1544 array define -yrange 0 255 1558-cval-59 19;
+#X obj 10 1570 array define -yrange 0 255 1558-cval-60 19;
+#X obj 10 1596 array define -yrange 0 255 1558-cval-61 19;
+#X obj 10 1622 array define -yrange 0 255 1558-cval-62 19;
+#X obj 10 1648 array define -yrange 0 255 1558-cval-63 19;
+#X obj 10 1674 array define -yrange 0 255 1558-cval-64 19;
+#X obj 10 1700 array define -yrange 0 255 1558-cval-65 19;
+#X obj 10 1726 array define -yrange 0 255 1558-cval-66 19;
+#X obj 10 1752 array define -yrange 0 255 1558-cval-67 19;
+#X obj 10 1778 array define -yrange 0 255 1558-cval-68 19;
+#X obj 10 1804 array define -yrange 0 255 1558-cval-69 19;
+#X obj 10 1830 array define -yrange 0 255 1558-cval-70 19;
+#X obj 10 1856 array define -yrange 0 255 1558-cval-71 19;
+#X obj 10 1882 array define -yrange 0 255 1558-cval-72 19;
+#X obj 10 1908 array define -yrange 0 255 1558-cval-73 19;
+#X obj 10 1934 array define -yrange 0 255 1558-cval-74 19;
+#X obj 10 1960 array define -yrange 0 255 1558-cval-75 19;
+#X obj 10 1986 array define -yrange 0 255 1558-cval-76 19;
+#X obj 10 2012 array define -yrange 0 255 1558-cval-77 19;
+#X obj 10 2038 array define -yrange 0 255 1558-cval-78 19;
+#X obj 10 2064 array define -yrange 0 255 1558-cval-79 19;
+#X obj 10 2090 array define -yrange 0 255 1558-cval-80 19;
+#X obj 10 2116 array define -yrange 0 255 1558-cval-81 19;
+#X obj 10 2142 array define -yrange 0 255 1558-cval-82 19;
+#X obj 10 2168 array define -yrange 0 255 1558-cval-83 19;
+#X obj 10 2194 array define -yrange 0 255 1558-cval-84 19;
+#X obj 10 2220 array define -yrange 0 255 1558-cval-85 19;
+#X obj 10 2246 array define -yrange 0 255 1558-cval-86 19;
+#X obj 10 2272 array define -yrange 0 255 1558-cval-87 19;
+#X obj 10 2298 array define -yrange 0 255 1558-cval-88 19;
+#X obj 10 2324 array define -yrange 0 255 1558-cval-89 19;
+#X obj 10 2350 array define -yrange 0 255 1558-cval-90 19;
+#X obj 10 2376 array define -yrange 0 255 1558-cval-91 19;
+#X obj 10 2402 array define -yrange 0 255 1558-cval-92 19;
+#X obj 10 2428 array define -yrange 0 255 1558-cval-93 19;
+#X obj 10 2454 array define -yrange 0 255 1558-cval-94 19;
+#X obj 10 2480 array define -yrange 0 255 1558-cval-95 19;
+#X obj 10 2506 array define -yrange 0 255 1558-cval-96 19;
+#X obj 10 2532 array define -yrange 0 255 1558-cval-97 19;
+#X obj 10 2558 array define -yrange 0 255 1558-cval-98 19;
+#X obj 10 2584 array define -yrange 0 255 1558-cval-99 19;
+#X obj 10 2610 array define -yrange 0 255 1558-cval-100 19;
+#X obj 10 2636 array define -yrange 0 255 1558-cval-101 19;
+#X obj 10 2662 array define -yrange 0 255 1558-cval-102 19;
+#X obj 10 2688 array define -yrange 0 255 1558-cval-103 19;
+#X obj 10 2714 array define -yrange 0 255 1558-cval-104 19;
+#X obj 10 2740 array define -yrange 0 255 1558-cval-105 19;
+#X obj 10 2766 array define -yrange 0 255 1558-cval-106 19;
+#X obj 10 2792 array define -yrange 0 255 1558-cval-107 19;
+#X obj 10 2818 array define -yrange 0 255 1558-cval-108 19;
+#X obj 10 2844 array define -yrange 0 255 1558-cval-109 19;
+#X obj 10 2870 array define -yrange 0 255 1558-cval-110 19;
+#X obj 10 2896 array define -yrange 0 255 1558-cval-111 19;
+#X obj 10 2922 array define -yrange 0 255 1558-cval-112 19;
+#X obj 10 2948 array define -yrange 0 255 1558-cval-113 19;
+#X obj 10 2974 array define -yrange 0 255 1558-cval-114 19;
+#X obj 10 3000 array define -yrange 0 255 1558-cval-115 19;
+#X obj 10 3026 array define -yrange 0 255 1558-cval-116 19;
+#X obj 10 3052 array define -yrange 0 255 1558-cval-117 19;
+#X obj 10 3078 array define -yrange 0 255 1558-cval-118 19;
+#X obj 10 3104 array define -yrange 0 255 1558-cval-119 19;
+#X obj 10 3130 array define -yrange 0 255 1558-cval-120 19;
+#X obj 10 3156 array define -yrange 0 255 1558-cval-121 19;
+#X obj 10 3182 array define -yrange 0 255 1558-cval-122 19;
+#X obj 10 3208 array define -yrange 0 255 1558-cval-123 19;
+#X obj 10 3234 array define -yrange 0 255 1558-cval-124 19;
+#X obj 10 3260 array define -yrange 0 255 1558-cval-125 19;
+#X obj 10 3286 array define -yrange 0 255 1558-cval-126 19;
+#X obj 10 3312 array define -yrange 0 255 1558-cval-127 19;
 #X restore 3719 2743 pd \$0-cvals;
 #N canvas 112 88 330 437 initmtxstep 0;
 #X obj 27 58 pdcontrol;
@@ -1359,7 +1359,7 @@ restore 100 52 pd-\$1-matrix \; \$1-mtxgui coords 0 -1 1 1 \$2 \$3
 #X connect 31 6 23 0;
 #X connect 32 0 22 0;
 #X restore 3719 2616 pd dyn_patching_mtxgui;
-#N canvas 87 23 1353 855 message_processing_mtxgui 0;
+#N canvas 630 153 1353 855 message_processing_mtxgui 0;
 #N canvas 0 23 450 300 getsetrow 0;
 #X obj 85 25 inlet;
 #X obj 85 49 route float list;
@@ -1804,7 +1804,7 @@ col or row changed);
 #X obj 147 60 route row;
 #X obj 20 82 r \$0-mtxgui_inlet;
 #X obj 147 82 route matrix;
-#N canvas 0 23 920 495 getsetmatrix 0;
+#N canvas 769 228 920 495 getsetmatrix 0;
 #X obj 29 13 inlet;
 #X obj 29 36 route bang list;
 #N canvas 0 23 845 562 getmatrix 0;
@@ -1819,7 +1819,7 @@ col or row changed);
 #X obj 29 311 t b a;
 #X obj 29 288 list prepend symbol;
 #X obj 61 334 list trim;
-#X msg 45 422 1 0 1 0 1 0 0 0 0 0 1 0 1 0 1 0;
+#X msg 45 422 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1;
 #X msg 44 389 add2 \$1;
 #X obj 57 467 outlet;
 #X floatatom 471 70 5 0 0 0 - - -;
@@ -1920,11 +1920,11 @@ col or row changed);
 #X connect 38 0 14 0;
 #X restore 324 209 pd getrow;
 #X obj 176 44 inlet;
-#X msg 265 320 matrix 8 16 1 0 0 0 1 0 1 0 1 0 0 1 1 0 1 0 1 1 0 0
-0 1 0 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1
-0 1 0 0 1 0 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 0 1
-0 1 0 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 0 0 0 0 0
-1 0 1 0 1 0;
+#X msg 265 320 matrix 8 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 1;
 #X obj 593 97 value \$0-mtx-rows;
 #X obj 468 97 value \$0-mtx-cols;
 #X msg 719 97 set matrix;
@@ -1959,7 +1959,7 @@ col or row changed);
 #X connect 12 0 10 1;
 #X connect 13 0 2 0;
 #X restore 29 128 pd getmatrix;
-#N canvas 444 26 1236 832 setmatrix 0;
+#N canvas 444 26 1236 832 setmatrix 1;
 #X obj 238 16 inlet;
 #X obj 310 98 unpack 0 0;
 #X obj 310 122 *;
@@ -2003,12 +2003,24 @@ col or row changed);
 #X msg 89 58 matrix;
 #X obj 17 85 s \$0-mtxgui_inlet;
 #X obj 330 170 ==;
-#X obj 317 516 fmod 2;
+#X msg 742 94 8 16 1 0 0 0 1 0 1 0 1 0 0 1 1 0 1 0 1 1 0 0 0 1 0 0
+0 1 0 0 0 1 0 1 1 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 1 0 0
+1 0 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 0 1 0 1 0 1
+1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 0 0 0 0 0 1 0 1 0
+1 0;
+#X obj 529 71 print x;
+#X floatatom 403 128 5 0 0 0 - - -;
+#X floatatom 329 137 5 0 0 0 - - -;
+#X obj 579 505 mod;
+#X obj 317 516 mod 2;
 #X connect 0 0 39 0;
 #X connect 1 0 2 0;
+#X connect 1 0 46 0;
 #X connect 1 1 2 1;
+#X connect 1 1 45 0;
 #X connect 2 0 33 0;
 #X connect 3 0 32 0;
+#X connect 3 0 44 0;
 #X connect 3 1 4 0;
 #X connect 3 1 8 1;
 #X connect 4 0 42 1;
@@ -2017,7 +2029,7 @@ col or row changed);
 #X connect 6 0 7 0;
 #X connect 8 0 16 0;
 #X connect 9 0 12 0;
-#X connect 10 0 43 0;
+#X connect 10 0 48 0;
 #X connect 10 1 9 1;
 #X connect 11 0 9 0;
 #X connect 11 1 14 0;
@@ -2062,7 +2074,8 @@ col or row changed);
 #X connect 39 3 36 0;
 #X connect 40 0 41 0;
 #X connect 42 0 5 0;
-#X connect 43 0 31 0;
+#X connect 43 0 3 0;
+#X connect 48 0 31 0;
 #X restore 80 105 pd setmatrix;
 #X obj 183 102 outlet;
 #X obj 80 70 t b l;
@@ -3194,12 +3207,14 @@ b);
 #X obj 928 483 loadbang;
 #X obj 935 505 r \$0-colordefaultreset;
 #X msg 900 568 hsv;
+#X obj 565 61 print;
 #X connect 2 0 3 0;
 #X connect 3 0 4 0;
 #X connect 5 0 6 0;
 #X connect 6 0 0 0;
 #X connect 7 0 8 0;
 #X connect 8 0 9 0;
+#X connect 8 0 63 0;
 #X connect 10 0 11 0;
 #X connect 11 0 12 0;
 #X connect 11 1 12 1;
