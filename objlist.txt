@@ -6,6 +6,7 @@ ls.binop  binary operations in list
 ls.butlast  list but the last element
 ls.choose random choose an element of the list
 ls.getRotate  N rotated element of a list
+ls.circgroup  groups elements into a circular list
 ls.group  groups elements into a list
 ls.iter list iteration
 ls.last last element of the list

@@ -1,0 +1,56 @@
+#N canvas 947 23 806 639 12;
+#X obj 1 31 cnv 3 800 3 empty empty description 12 12 0 12 #7c7c7c
+#404040 0;
+#X obj 1 155 cnv 3 800 3 empty empty inlets 8 12 0 13 #dcdcdc #000000
+0;
+#X obj 83 161 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0
+;
+#X obj 1 239 cnv 3 800 3 empty empty outlets 8 12 0 13 #dcdcdc #000000
+0;
+#X obj 83 245 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0
+;
+#X obj 1 375 cnv 3 800 3 empty empty example 8 12 0 13 #dcdcdc #000000
+0;
+#X obj 1 325 cnv 3 800 3 empty empty arguments 8 12 0 13 #dcdcdc #000000
+0;
+#X obj 1 1 cnv 3 800 3 empty empty ls.circgroup 14 14 1 16 #7c7c7c
+#404040 0;
+#X obj 83 205 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0
+;
+#X obj 26 427 until;
+#X msg 98 491 reset;
+#X obj 27 455 f;
+#X obj 56 455 + 1;
+#X msg 69 427 0;
+#X msg 26 405 30;
+#X floatatom 124 533 5 0 0 0 - - - 0;
+#X obj 27 586 print grouped;
+#X obj 27 558 ls.circgroup 7;
+#X text 104 205 float: new group size;
+#X text 105 245 list: list of grouped elements;
+#X text 90 457 generating some floats to group;
+#X text 85 341 \$1 float: group size;
+#X obj 621 40 plnf_version;
+#X text 32 52 groups incoming elements into lists as in a circular
+buffer;
+#X text 106 161 float: elements to group;
+#X text 106 181 reset: resets the object;
+#X text 167 533 change group size (reset if you need!);
+#X obj 83 270 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0
+;
+#X text 104 270 1/0: 1 - current list length is smaller than max list
+length;
+#X text 139 285 0 - current list length reached the max list length
+(oldest elements will be discarded from the list tail);
+#X text 32 76 new elements are prepended to the output list \; when
+the list length is greater than the group argument \, the last (oldest)
+element is discarded from the list.;
+#X connect 9 0 11 0;
+#X connect 10 0 17 0;
+#X connect 11 0 12 0;
+#X connect 11 0 17 0;
+#X connect 12 0 11 1;
+#X connect 13 0 11 1;
+#X connect 14 0 9 0;
+#X connect 15 0 17 1;
+#X connect 17 0 16 0;
