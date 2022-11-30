@@ -1,29 +1,17 @@
-#N canvas 0 23 820 1035 12;
-#X obj 1 29 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 113 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 119 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 183 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 189 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 425 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 1 cnv 3 800 3 empty empty mtxgui 14 14 1 16 -128992 -66577
-0;
-#X text 105 119 commands: col row matrix element get set setrows setcols
-setsize setcellsize setnewargs colorons coloroffs mtxdump cellcolorons
-cellcoloroffs colcolorons colcoloroffs rowcolorons rowcoloroffs (see
-below);
+#N canvas 0 27 820 993 12;
+#X obj 1 29 cnv 3 800 3 empty empty description 12 12 0 12 #7c7c7c #404040 0;
+#X obj 1 113 cnv 3 800 3 empty empty inlets 8 12 0 13 #dcdcdc #000000 0;
+#X obj 83 119 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 1 183 cnv 3 800 3 empty empty outlets 8 12 0 13 #dcdcdc #000000 0;
+#X obj 83 189 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 1 425 cnv 3 800 3 empty empty example 8 12 0 13 #dcdcdc #000000 0;
+#X obj 1 1 cnv 3 800 3 empty empty mtxgui 14 14 1 16 #7c7c7c #404040 0;
+#X text 105 119 commands: col row matrix element get set setrows setcols setsize setcellsize setnewargs colorons coloroffs mtxdump cellcolorons cellcoloroffs colcolorons colcoloroffs rowcolorons rowcoloroffs (see below);
 #N canvas 124 23 1316 855 setting_values 0;
-#X obj 65 28 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
-;
+#X obj 65 28 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X msg 65 47 set 2 3 \$1;
 #X msg 77 90 element 4 3 \$1;
-#X obj 77 71 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
-;
+#X obj 77 71 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 312 57 element row col 1/0;
 #X text 340 41 set row col 1/0;
 #X text 462 49 -> set cell value;
@@ -35,16 +23,11 @@ below);
 #X msg 126 149 col 5 0 0 0 0 0 0 0;
 #X msg 126 191 row 3 1 1 1 1 1 1 1 1;
 #X msg 127 214 row 3 0 0 0 0 0 0 0 0;
-#X msg 148 299 matrix 7 8 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1
-0 1 0 0 1 1 1 1 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 1
-0;
-#X msg 165 352 matrix 7 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0;
+#X msg 148 299 matrix 7 8 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 1 0 0 1 1 1 1 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 1 0;
+#X msg 165 352 matrix 7 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X text 144 277 set entire matrix;
 #X msg 193 442 mtxdump \$1;
-#X obj 193 423 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 193 423 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X msg 126 126 col 5 0.1 1 1 1 1 1 1;
 #X obj 245 559 print cell;
 #X obj 252 580 print row;
@@ -77,12 +60,7 @@ below);
 #N canvas 0 23 1440 855 loadbang 0;
 #X obj 26 161 outlet;
 #X obj 26 26 loadbang;
-#X msg 26 48 matrix 7 27 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
-1 0 0 0 1 0 1 1 1 1 0 1 0 0 0 1 0 0 0 1 1 1 1 0 1 0 0 1 1 1 1 1 0 1
-0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 0 1 0 1 1 1 0 0 1 0 0
-0 1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0
-0 1 0 0 0 0 1 0 0 0 1 0 1 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 0;
+#X msg 26 48 matrix 7 27 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 1 1 1 1 0 1 0 0 0 1 0 0 0 1 1 1 1 0 1 0 0 1 1 1 1 1 0 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 0 1 0 1 1 1 0 0 1 0 0 0 1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 1 0 1 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
 #X restore 86 309 pd loadbang;
@@ -127,18 +105,15 @@ below);
 #X obj 20 839 mtxgui 5 5 10;
 #X obj 19 464 loadbang;
 #X msg 95 812 mtxdump \$1;
-#X obj 95 795 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 95 795 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 314 1021 <- ready to be used with iemmatrix;
 #X text 314 1000 <- individual cell updates;
 #X text 314 935 <- get/element query;
 #X msg 64 666 get 1 2;
 #X msg 64 687 get 1 3;
 #X msg 36 524 set 2 4 \$1;
-#X obj 36 507 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X msg 20 485 matrix 5 5 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0
-0 0 0 0;
+#X obj 36 507 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X msg 20 485 matrix 5 5 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X msg 47 578 row 4 0 0 0 0 0;
 #X msg 58 631 col 4 0 0 0 0 0;
 #X msg 58 609 col 4 1 1 1 1 1;
@@ -152,23 +127,18 @@ below);
 #X obj 66 160 mtxgui 4 2;
 #X obj 66 248 mtxgui 2 3 20;
 #X text 61 140 [mtxgui 4 2] -> 4 rows \, 2 columns;
-#X text 63 60 [mtxgui] (no arguments) -> 3 rows \, 4 cols \, cellsize:
-13;
-#X text 61 230 [mtxgui 2 3 20] -> 2 rows \, 3 columns \, cellsize:
-20;
+#X text 63 60 [mtxgui] (no arguments) -> 3 rows \, 4 cols \, cellsize: 13;
+#X text 61 230 [mtxgui 2 3 20] -> 2 rows \, 3 columns \, cellsize: 20;
 #X msg 67 404 setrows 5;
 #X msg 77 428 setcols 12;
 #X msg 88 451 setsize 5 9;
 #X text 45 37 You can create a mtxgui with the following syntaxes;
 #X obj 66 505 mtxgui 4 4 10;
-#X text 45 337 It is possible to change these parameters and reinstantiate
-the matrix with the following commands:;
+#X text 45 337 It is possible to change these parameters and reinstantiate the matrix with the following commands:;
 #X msg 96 476 setnewargs 12 12 8;
 #X obj 66 631 route mtxgui_ready;
-#X obj 66 655 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X text 86 653 <- may be usefull to know when everything is ready (as
-the GUI is created with dynamic patching);
+#X obj 66 655 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X text 86 653 <- may be usefull to know when everything is ready (as the GUI is created with dynamic patching);
 #X connect 6 0 10 0;
 #X connect 7 0 10 0;
 #X connect 8 0 10 0;
@@ -189,8 +159,7 @@ the GUI is created with dynamic patching);
 #X text 314 978 <- col query;
 #X text 314 1044 <- internal state/other messages;
 #X text 174 815 dump matrix when setting values (use [route mtx]);
-#X text 109 189 the abstraction uses only one real output \, but uses
-tags to route the following info:;
+#X text 109 189 the abstraction uses only one real output \, but uses tags to route the following info:;
 #X text 162 224 cell:;
 #X text 199 224 [float] result of get/element methods;
 #X text 169 247 row:;
@@ -199,17 +168,11 @@ tags to route the following info:;
 #X text 199 271 [list] result of col method;
 #X text 141 295 changed:;
 #X text 169 322 mtx:;
-#X text 199 322 [list] result of matrix method. Also outputs matrices
-continuously \, at every change \, if [mtxdump 1< is sent to the object.
-;
+#X text 199 322 [list] result of matrix method. Also outputs matrices continuously \, at every change \, if [mtxdump 1< is sent to the object.;
 #X text 155 376 other:;
-#X text 199 376 [list] internal state messages (signals if matrix was
-already generated through the abstraction dynamic patching process
-\, for instance).;
-#X text 199 296 [list] outputs all cell values that changed (row col
-val);
-#X obj 564 586 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X text 199 376 [list] internal state messages (signals if matrix was already generated through the abstraction dynamic patching process \, for instance).;
+#X text 199 296 [list] outputs all cell values that changed (row col val);
+#X obj 564 586 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #N canvas 447 43 993 689 set_matrix_color 0;
 #X obj 65 608 mtxgui 5 5 10;
 #X obj 64 7 loadbang;
@@ -240,19 +203,15 @@ val);
 #X text 81 103 G;
 #X text 81 122 B;
 #X msg 161 167 colorons \$1 \$2 \$3;
-#X msg 64 50 matrix 5 5 0 1 1 1 0 1 0 1 0 1 0 0 0 1 1 1 1 0 0 0 1 0
-0 0 1;
+#X msg 64 50 matrix 5 5 0 1 1 1 0 1 0 1 0 1 0 0 0 1 1 1 1 0 0 0 1 0 0 0 1;
 #X text 68 31 set some values to test colors;
 #X text 290 167 <- set "on" state color globally;
-#X obj 100 84 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 100 104 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 100 124 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X floatatom 234 81 5 0 0 0 - - -;
-#X floatatom 234 101 5 0 0 0 - - -;
-#X floatatom 234 122 5 0 0 0 - - -;
+#X obj 100 84 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 100 104 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 100 124 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X floatatom 234 81 5 0 0 0 - - - 0;
+#X floatatom 234 101 5 0 0 0 - - - 0;
+#X floatatom 234 122 5 0 0 0 - - - 0;
 #N canvas 0 23 450 300 packvals 0;
 #X obj 39 34 inlet;
 #X obj 39 142 pack 0 0 0;
@@ -279,22 +238,18 @@ val);
 #X text 171 212 R;
 #X text 171 233 G;
 #X text 171 252 B;
-#X obj 190 214 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 190 234 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 190 254 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X floatatom 324 211 5 0 0 0 - - -;
-#X floatatom 324 231 5 0 0 0 - - -;
-#X floatatom 324 252 5 0 0 0 - - -;
+#X obj 190 214 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 190 234 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 190 254 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X floatatom 324 211 5 0 0 0 - - - 0;
+#X floatatom 324 231 5 0 0 0 - - - 0;
+#X floatatom 324 252 5 0 0 0 - - - 0;
 #X msg 251 297 coloroffs \$1 \$2 \$3;
 #X text 385 297 <- set "off" state color globally;
 #X msg 256 395 colormode hsv;
 #X msg 256 372 colormode rgb;
 #X text 357 372 (default);
-#X text 358 396 <- the color commands will be interpreted as hue/saturation/value
-(instead of R G B);
+#X text 358 396 <- the color commands will be interpreted as hue/saturation/value (instead of R G B);
 #X connect 1 0 7 0;
 #X connect 2 0 6 0;
 #X connect 6 0 0 0;
@@ -323,8 +278,7 @@ val);
 #X text 538 160 -> set "on" state color of a specific row;
 #X text 333 187 colcolorons colnumber R G B;
 #X msg 134 186 colcolorons 1 100 220 0;
-#X msg 64 50 matrix 5 5 1 1 1 1 0 0 1 1 0 1 0 0 0 1 1 1 1 0 0 0 1 0
-0 0 1;
+#X msg 64 50 matrix 5 5 1 1 1 1 0 0 1 1 0 1 0 0 0 1 1 1 1 0 0 0 1 0 0 0 1;
 #X text 332 216 rowcoloroffs rownumber R G B;
 #X text 333 242 colcoloroffs colnumber R G B;
 #X text 538 214 -> set "off" state color of a specific row;
@@ -337,8 +291,7 @@ val);
 #X msg 149 331 colormode hsv;
 #X msg 149 308 colormode rgb;
 #X text 250 308 (default);
-#X text 251 332 <- the color commands will be interpreted as hue/saturation/value
-;
+#X text 251 332 <- the color commands will be interpreted as hue/saturation/value;
 #X msg 238 275 colorreset;
 #X text 319 275 reset to the default color;
 #X msg 134 159 rowcolorons 2 200 50 190;
@@ -353,15 +306,13 @@ val);
 #X connect 20 0 14 0;
 #X connect 22 0 14 0;
 #X restore 565 919 pd set_colrow_color;
-#X obj 595 612 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 595 612 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 575 610 or;
 #N canvas 447 132 993 689 set_individual_cell_color 0;
 #X obj 65 328 mtxgui 5 5 10;
 #X obj 64 7 loadbang;
 #X text 68 31 set some values to test colors;
-#X msg 64 50 matrix 5 5 1 1 1 1 0 0 1 1 0 1 0 0 0 1 1 1 1 0 0 0 1 0
-0 0 1;
+#X msg 64 50 matrix 5 5 1 1 1 1 0 0 1 1 0 1 0 0 0 1 1 1 1 0 0 0 1 0 0 0 1;
 #X msg 141 161 cellcolorons 1 2 0 196 0;
 #X msg 106 184 cellcoloroffs 3 3 128 255 255;
 #X text 333 160 cellcolorons row col R G B;
@@ -405,8 +356,7 @@ val);
 #X obj 113 800 list trim;
 #X obj 217 390 f;
 #X obj 246 390 - 1;
-#X obj 217 370 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 217 370 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X msg 266 346 -1;
 #X obj 260 487 + 1;
 #X obj 263 534 mod 7;
