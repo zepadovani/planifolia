@@ -1,40 +1,46 @@
 #N canvas 472 23 808 514 12;
-#X msg 195 348 10 20 30 40 50;
-#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 137 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 251 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 -1 cnv 3 800 3 empty empty ls.getRotate 14 14 1 16 -128992
--66577 0;
+#X declare -path planifolia;
+#X obj 83 125 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
 #X obj 621 40 plnf_version;
-#X obj 1 211 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 217 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 83 181 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
-;
-#X msg 195 323 list a b c d e;
-#X floatatom 30 295 5 0 0 0 - - -;
-#X obj 28 487 print;
-#X text 103 137 float (int): index;
-#X text 103 181 list: list to rotate through;
-#X text 103 159 bang: repeats last index;
-#X obj 55 338 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X msg 194 401 a b c d;
-#X text 257 404 will be converted to list;
-#X text 306 337 sets list to iterate;
-#X obj 28 436 ls.rotate;
-#X text 32 48 get N rotation of q list. If N is less than 0 or greater
-than list length \, it will also work.;
-#X text 105 217 list: roated list;
-#X connect 0 0 20 1;
-#X connect 10 0 20 1;
-#X connect 11 0 20 0;
-#X connect 16 0 20 0;
-#X connect 17 0 20 1;
-#X connect 20 0 12 0;
+#X obj 83 237 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 83 169 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X text 103 124 float (int): index;
+#X text 103 168 list: list to rotate through;
+#X text 103 146 bang: repeats last index;
+#X text 32 47 get N rotation of q list. If N is less than 0 or greater than list length \, it will also work.;
+#X text 105 236 list: roated list;
+#X obj -1 -1 cnv 15 805 23 empty empty ls.rotate 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 98 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 211 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 374 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X msg 138 469 10 20 30 40 50;
+#X msg 138 444 list a b c d e;
+#X floatatom 58 426 5 0 0 0 - - - 0;
+#X obj 56 618 print;
+#X obj 83 469 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X msg 137 522 a b c d;
+#X text 200 524 will be converted to list;
+#X text 249 457 sets list to iterate;
+#X obj 56 567 ls.rotate;
+#X floatatom 461 420 5 0 0 0 - - - 0;
+#X obj 486 463 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 461 567 ls.rotate 20 30 40 a b c;
+#X listbox 56 593 35 0 0 0 - - - 0;
+#X obj 461 619 print;
+#X listbox 461 594 35 0 0 0 - - - 0;
+#X obj 83 257 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X text 105 255 int: idx modulo;
+#X obj -1 294 cnv 15 805 17 empty empty arguments 8 8 0 12 #282d39 #efefef 0;
+#X text 83 321 list of values (i.e \, list to rotate through);
+#X obj 621 412 declare -path planifolia;
+#X connect 13 0 21 1;
+#X connect 14 0 21 1;
+#X connect 15 0 21 0;
+#X connect 17 0 21 0;
+#X connect 18 0 21 1;
+#X connect 21 0 25 0;
+#X connect 22 0 24 0;
+#X connect 23 0 24 0;
+#X connect 24 0 27 0;
+#X connect 25 0 16 0;
+#X connect 27 0 26 0;

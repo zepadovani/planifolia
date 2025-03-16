@@ -1,36 +1,24 @@
 #N canvas 197 53 1424 744 12;
+#X declare -path planifolia;
 #X obj 24 364 print;
-#X obj 1 1 cnv 3 800 3 empty empty symbol.split 20 12 0 14 -128992
--99865 0;
-#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 141 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 147 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 83 167 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 191 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 197 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 234 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
+#X obj 83 122 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 83 142 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 83 197 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
 #X text 32 48 splits symbol according to specified char;
-#X text 104 147 symbol: symbol to split;
-#X text 104 167 symbol: separator (char symbol);
+#X text 104 122 symbol: symbol to split;
+#X text 104 142 symbol: separator (char symbol);
 #X msg 144 338 /;
 #X msg 24 269 aba/ebe/ibi/obo/ubu;
-#X obj 303 306 symbol.split /;
-#X obj 303 332 print;
-#X msg 303 275 this\ is\ a\ test\ with\ spaces;
 #X obj 24 338 symbol.split b;
 #X msg 144 360 b;
 #X text 105 197 splitted symbols (sequence);
 #X obj 621 40 plnf_version;
-#X connect 12 0 17 1;
-#X connect 13 0 17 0;
-#X connect 14 0 15 0;
-#X connect 16 0 14 0;
-#X connect 17 0 0 0;
-#X connect 18 0 17 1;
+#X obj 0 -1 cnv 15 805 23 empty empty symbol.== 8 10 0 20 #282d39 #efefef 0;
+#X obj 0 93 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj 0 173 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj 0 239 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X obj 612 269 declare -path planifolia;
+#X connect 7 0 9 1;
+#X connect 8 0 9 0;
+#X connect 9 0 0 0;
+#X connect 10 0 9 1;

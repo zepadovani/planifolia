@@ -1,20 +1,9 @@
 #N canvas 472 23 805 622 12;
+#X declare -path planifolia;
 #X msg 72 257 10 20 30 40 50;
-#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 111 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 117 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 201 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 -1 cnv 3 800 3 empty empty ls.butlast 14 14 1 16 -128992 -66577
-0;
+#X obj 83 117 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
 #X obj 621 40 plnf_version;
-#X obj 1 151 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 157 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
+#X obj 83 167 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
 #X msg 60 232 list a b c d e;
 #X msg 160 292 a b c d e;
 #X text 183 246 sets list and automatically chooses element;
@@ -22,9 +11,14 @@
 #X obj 60 328 ls.butlast;
 #X obj 60 379 print;
 #X text 103 117 list;
-#X text 105 157 list;
+#X text 105 167 list;
 #X text 32 48 returns list without its last element;
-#X connect 0 0 13 0;
-#X connect 9 0 13 0;
-#X connect 10 0 13 0;
-#X connect 13 0 14 0;
+#X obj -1 -1 cnv 15 805 23 empty empty ls.butlast 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 93 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 147 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 207 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X obj 636 240 declare -path planifolia;
+#X connect 0 0 8 0;
+#X connect 4 0 8 0;
+#X connect 5 0 8 0;
+#X connect 8 0 9 0;

@@ -159,16 +159,15 @@
 #X connect 39 0 28 0;
 #X restore -24 502 pd group;
 #N canvas 0 23 450 300 \$0-map 0;
-#X obj 10 10 r 1551-map_in1;
-#X obj 190 10 r 1551-map_in2;
-#X obj 10 190 s 1551-map_out;
-#X obj 10 100 expr $f1+cos($f2/3.1415);
+#X obj 10 10 r 1195-map_in1;
+#X obj 190 10 r 1195-map_in2;
+#X obj 10 190 s 1195-map_out;
+#X obj 10 100 +;
 #X connect 0 0 3 0;
 #X connect 1 0 3 1;
 #X connect 3 0 2 0;
 #X restore 482 126 pd \$0-map;
-#X msg 648 632 \; pd-1551-map obj 10 100 expr $f1+cos($f2/3.1415) \;
-;
+#X msg 648 632 \; pd-1195-map obj 10 100 + \;;
 #X msg 648 517 addsemi;
 #X obj 648 608 r \$0-buildmess;
 #X obj 836 495 s \$0-buildmess;
@@ -267,8 +266,7 @@
 #X obj 127 175 inlet;
 #X obj -69 436 s \$0-map_in1;
 #X obj 26 436 s \$0-map_in2;
-#X msg 648 669 \; pd-\$1-map connect 0 0 3 0 \; pd-\$1-map connect
-1 0 3 1 \; pd-\$1-map connect 3 0 2 0 \;, f 68;
+#X msg 648 669 \; pd-\$1-map connect 0 0 3 0 \; pd-\$1-map connect 1 0 3 1 \; pd-\$1-map connect 3 0 2 0 \;, f 68;
 #X obj 127 233 t l l;
 #X obj 167 256 list length;
 #X obj 152 278 ==;
@@ -276,11 +274,9 @@
 #X obj 186 312 sel 0;
 #X obj 228 333 print \$0-ls.mapcar2;
 #X msg 228 312 list lengths don't match;
-#X msg 658 416 \; pd-\$1-map obj 10 10 r \$1-map_in1 \; pd-\$1-map
-obj 190 10 r \$1-map_in2 \; pd-\$1-map obj 10 190 s \$1-map_out \;
-, f 68;
-#X floatatom 218 280 5 0 0 0 - - -;
-#X floatatom 59 287 5 0 0 0 - - -;
+#X msg 658 416 \; pd-\$1-map obj 10 10 r \$1-map_in1 \; pd-\$1-map obj 190 10 r \$1-map_in2 \; pd-\$1-map obj 10 190 s \$1-map_out \;, f 68;
+#X floatatom 218 280 5 0 0 0 - - - 0;
+#X floatatom 59 287 5 0 0 0 - - - 0;
 #X obj 760 111 inlet;
 #X obj 761 138 list;
 #X obj 761 207 t f b b b f b b f f;
@@ -318,8 +314,7 @@ obj 190 10 r \$1-map_in2 \; pd-\$1-map obj 10 190 s \$1-map_out \;
 #X restore 879 276 pd iterate;
 #X msg 988 165 \; pd-\$1-map clear \;;
 #X obj 988 143 f \$0;
-#X obj 986 119 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 986 119 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj -77 94 inlet;
 #X obj -77 267 t l l;
 #X obj -77 245 list store;

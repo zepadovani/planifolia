@@ -1,48 +1,36 @@
 #N canvas 458 53 824 644 12;
-#X obj 58 536 print;
-#X msg 279 421 expr $f1+1;
-#X msg 33 409 1 0.2 3.3 -4 5;
-#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 87 139 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 251 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 87 259 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 341 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 -1 cnv 3 800 3 empty empty ls.unop 14 14 1 16 -128992 -66577
-0;
-#X obj 1 305 cnv 3 800 3 empty empty arguments 8 12 0 13 -228856 -1
-0;
+#X declare -path planifolia;
+#X obj 78 514 print;
+#X msg 299 399 expr $f1+1;
+#X msg 53 387 1 0.2 3.3 -4 5;
+#X obj 87 139 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 87 256 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
 #X obj 621 40 plnf_version;
-#X text 32 48 Performs unary operation for each element in a list and
-outputs result as a list;
-#X text 107 139 list: list to perform the unary operation for each
-element;
-#X text 107 159 set: sets list but does not perform unary operation
-(waits for bang);
-#X text 107 190 bang: performs unary operation in the stored list;
-#X text 109 259 iterated output values;
+#X text 32 48 Performs unary operation for each element in a list and outputs result as a list;
+#X text 107 139 list: list to perform the unary operation for each element;
+#X text 107 159 set: sets list but does not perform unary operation (waits for bang);
+#X text 107 177 bang: performs unary operation in the stored list;
+#X text 109 256 iterated output values;
 #X text 84 320 \$1 ... operation ex. "expr abs($f1-2)";
-#X obj 77 470 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X msg 289 449 mod 3;
-#X obj 58 514 ls.unop expr $f1+cos($f1/3.1415);
-#X msg 52 439 set 1 2 3 4 5 6 7 8;
-#X text 424 418 change operation;
-#X msg 299 479 expr fmod($f1\\\, 2.3);
-#X text 448 479 [obs: caution with commas!];
-#X obj 87 214 cnv 18 3 17 empty empty 2 5 9 0 14 -228856 -162280 0
-;
-#X text 108 213 unary operation/expression;
-#X connect 1 0 20 1;
-#X connect 2 0 20 0;
-#X connect 18 0 20 0;
-#X connect 19 0 20 1;
-#X connect 20 0 0 0;
-#X connect 21 0 20 0;
-#X connect 23 0 20 1;
+#X obj 97 448 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X msg 309 427 mod 3;
+#X obj 78 492 ls.unop expr $f1+cos($f1/3.1415);
+#X msg 72 417 set 1 2 3 4 5 6 7 8;
+#X text 444 396 change operation;
+#X msg 319 457 expr fmod($f1\\\, 2.3);
+#X text 468 457 [obs: caution with commas!];
+#X obj 88 205 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X text 109 204 unary operation/expression;
+#X obj -1 -1 cnv 15 805 23 empty empty ls.unop 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 118 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 231 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 357 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 299 cnv 15 805 17 empty empty arguments 8 8 0 12 #282d39 #efefef 0;
+#X obj 621 392 declare -path planifolia;
+#X connect 1 0 14 1;
+#X connect 2 0 14 0;
+#X connect 12 0 14 0;
+#X connect 13 0 14 1;
+#X connect 14 0 0 0;
+#X connect 15 0 14 0;
+#X connect 17 0 14 1;

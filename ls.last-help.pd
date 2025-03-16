@@ -1,34 +1,27 @@
 #N canvas 638 33 806 782 12;
-#X obj 1 31 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 105 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 111 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 145 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 151 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 225 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 1 cnv 3 800 3 empty empty ls.last 14 14 1 16 -128992 -66577
-0;
-#X obj 83 171 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
-;
-#X msg 78 387 a 4 dd e z 3 5;
+#X declare -path planifolia;
+#X obj 83 122 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 84 184 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 84 204 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X msg 84 380 a 4 dd e z 3 5;
 #X obj 621 40 plnf_version;
-#X obj 26 492 print el;
-#X obj 72 469 print idx;
-#X text 105 151 element;
-#X text 105 171 index of element;
-#X text 191 388 will be converted to list;
-#X msg 42 324 10 9 8 7 6 5;
-#X msg 26 286 list a b c d e f g;
-#X obj 26 440 ls.last;
+#X obj 32 485 print el;
+#X obj 78 462 print idx;
+#X text 106 184 element;
+#X text 106 204 index of element;
+#X text 197 381 will be converted to list;
+#X msg 48 317 10 9 8 7 6 5;
+#X msg 32 279 list a b c d e f g;
+#X obj 32 433 ls.last;
 #X text 32 52 gets last element of a list;
-#X text 106 111 list;
-#X connect 8 0 17 0;
-#X connect 15 0 17 0;
-#X connect 16 0 17 0;
-#X connect 17 0 10 0;
-#X connect 17 1 11 0;
+#X text 106 122 list;
+#X obj -1 -1 cnv 15 805 23 empty empty ls.last 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 94 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 158 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 239 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X obj 643 279 declare -path planifolia;
+#X connect 3 0 12 0;
+#X connect 10 0 12 0;
+#X connect 11 0 12 0;
+#X connect 12 0 5 0;
+#X connect 12 1 6 0;

@@ -1,79 +1,59 @@
-#N canvas 372 23 821 954 12;
+#N canvas 372 23 822 797 12;
+#X declare -path planifolia;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-arrayA 10 float 3;
 #A 0 0.9 0.8 0 0.3 1.3 0.1 0.7 0.4 1.5 1;
-#X coords 0 1 10 -1 200 140 1 0 0;
-#X restore 57 353 graph;
+#X coords 0 1 10 -1 361 87 1 0 0;
+#X restore 12 362 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-arrayB 10 float 3;
 #A 0 -1 -1 1 1 1 0 0 0 1 1;
-#X coords 0 1 10 -1 200 140 1 0 0;
-#X restore 54 531 graph;
+#X coords 0 1 10 -1 361 87 1 0 0;
+#X restore 12 480 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-arrayC 10 float 2;
-#X coords 0 1 10 -1 200 140 1 0 0;
-#X restore 55 767 graph;
-#X obj 324 498 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 323 452 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 324 579 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 324 629 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 323 675 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 323 474 array.rand \$0-arrayA 0 2 0.1;
-#X obj 323 715 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 323 733 array.binop \$0-arrayA \$0-arrayB \$0-arrayC ||;
-#X obj 324 520 array.rand \$0-arrayB -1 1 1;
-#X obj 323 755 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 323 773 array.binop \$0-arrayA \$0-arrayB \$0-arrayC cos;
-#X obj 324 600 array.binop \$0-arrayA \$0-arrayB \$0-arrayC *;
-#X obj 323 650 array.binop \$0-arrayA \$0-arrayB \$0-arrayC +;
-#X obj 323 693 array.binop \$0-arrayA \$0-arrayB \$0-arrayC &&;
-#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 87 139 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 171 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 87 179 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 291 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 -1 cnv 3 800 3 empty empty array.binop 14 14 1 16 -128992
--66577 0;
-#X text 107 139 bang;
-#X obj 1 205 cnv 3 800 3 empty empty arguments 8 12 0 13 -228856 -1
-0;
+#X coords 0 1 10 -1 361 87 1 0 0;
+#X restore 12 596 graph;
+#X obj 391 418 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 392 375 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 392 486 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 392 528 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 392 570 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 392 395 array.rand \$0-arrayA 0 2 0.1;
+#X obj 392 612 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 392 630 array.binop \$0-arrayA \$0-arrayB \$0-arrayC ||;
+#X obj 391 437 array.rand \$0-arrayB -1 1 1;
+#X obj 392 654 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 392 504 array.binop \$0-arrayA \$0-arrayB \$0-arrayC *;
+#X obj 392 546 array.binop \$0-arrayA \$0-arrayB \$0-arrayC +;
+#X obj 392 588 array.binop \$0-arrayA \$0-arrayB \$0-arrayC &&;
+#X obj 87 139 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 87 188 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X text 107 138 bang;
+#X text 32 47 Having an arrayA and an arrayB \, uses an arbitrary object or abstraction (with two numerical inputs) to perform the desired operation in the input values (one by one) and stores the result in arrayC;
+#X text 392 353 1 generate random values to test, f 36;
+#X text 419 481 2 perform different operations, f 38;
+#X obj 276 704 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 276 738 array.binop \$0-arrayA \$0-arrayB \$0-arrayC expr ($f1-$f2)/($f1+$f2), f 60;
+#X text 296 700 you can also use expr or any arbitrary abstraction!, f 47;
+#X text 109 187 iterated output values (the same stored in arrayC);
+#X text 87 234 \$1 array 1 (input data);
+#X text 87 252 \$2 array 2 (input data);
+#X text 87 269 \$3 array 3 (output data);
+#X text 87 285 \$4 ... operation ex. "expr abs($f1-$f2)";
+#X obj -1 -1 cnv 15 805 23 empty empty array.binop 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 118 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 170 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 317 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X obj 0 220 cnv 15 805 17 empty empty arguments 8 8 0 12 #282d39 #efefef 0;
+#X obj 392 672 array.binop \$0-arrayA \$0-arrayB \$0-arrayC pow;
 #X obj 621 40 plnf_version;
-#X text 32 48 Having an arrayA and an arrayB \, uses an arbitrary object
-or abstraction (with two numerical inputs) to perform the desired operation
-in the input values (one by one) and stores the result in arrayC;
-#X text 321 433 1 generate random values to test;
-#X text 322 556 2 perform different operations;
-#X obj 323 815 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 323 833 array.binop \$0-arrayA \$0-arrayB \$0-arrayC expr ($f1-$f2)/($f1+$f2)
-;
-#X text 348 812 you can also use expr or any arbitrary abstraction!
-;
-#X text 109 179 iterated output values (the same stored in arrayC)
-;
-#X text 87 213 \$1 array 1 (input data);
-#X text 87 231 \$2 array 2 (input data);
-#X text 87 248 \$3 array 3 (output data);
-#X text 87 264 \$4 ... operation ex. "expr abs($f1-$f2)";
+#X obj 636 342 declare -path planifolia;
 #X connect 3 0 11 0;
 #X connect 4 0 8 0;
-#X connect 5 0 14 0;
-#X connect 6 0 15 0;
-#X connect 7 0 16 0;
+#X connect 5 0 13 0;
+#X connect 6 0 14 0;
+#X connect 7 0 15 0;
 #X connect 9 0 10 0;
-#X connect 12 0 13 0;
-#X connect 30 0 31 0;
+#X connect 12 0 35 0;
+#X connect 22 0 23 0;

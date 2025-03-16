@@ -1,24 +1,18 @@
-#N canvas 638 33 806 399 12;
-#X obj 1 31 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 105 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 111 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 145 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 151 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 225 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 1 cnv 3 800 3 empty empty ls.min 14 14 1 16 -128992 -66577
-0;
+#N canvas 600 507 806 399 12;
+#X declare -path planifolia;
+#X obj 83 120 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 83 181 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
 #X obj 621 40 plnf_version;
-#X obj 32 362 print el;
-#X text 105 151 element;
-#X text 106 111 list;
-#X msg 32 274 10 9 8 23 7 6 5;
-#X obj 32 310 ls.min;
+#X obj 32 371 print el;
+#X text 105 181 element;
+#X text 106 120 list;
+#X msg 32 283 10 9 8 23 7 6 5;
+#X obj -1 -1 cnv 15 805 23 empty empty ls.min 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 94 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 151 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 232 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
 #X text 32 52 gets smallest element of a list;
-#X connect 11 0 12 0;
-#X connect 12 0 8 0;
+#X obj 32 319 ls.min;
+#X obj 639 259 declare -path planifolia;
+#X connect 6 0 12 0;
+#X connect 12 0 3 0;

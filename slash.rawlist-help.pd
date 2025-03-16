@@ -1,0 +1,18 @@
+#N canvas 418 23 823 749 12;
+#X declare -path planifolia;
+#X obj 83 137 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 83 207 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 621 40 plnf_version;
+#X obj -1 -1 cnv 15 805 23 empty empty slash.oscroute 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 111 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj 0 185 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 243 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X obj 621 272 declare -path planifolia;
+#X obj 45 333 slash.rawlist;
+#X msg 45 296 /a/b/c/d 1 2 3 4 5;
+#X listbox 45 370 21 0 0 0 - - - 16;
+#X text 32 34 removes slashes from slash-styles osc lists;
+#X text 103 137 slash-styled list;
+#X text 105 207 raw-list;
+#X connect 8 0 10 0;
+#X connect 9 0 8 0;

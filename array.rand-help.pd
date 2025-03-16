@@ -1,37 +1,23 @@
 #N canvas 673 70 805 747 12;
+#X declare -path planifolia;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0_array 100 float 3;
-#A 0 0.57 0.56 -0.11 0.71 0.11 -0.23 0.85 0.0799999 0.04 -0.5 -0.86
-0.91 0.47 -0.73 -0.06 -0.27 0.09 -0.74 0.26 -0.75 -0.81 -0.21 0.89
-0.78 0.62 0.77 0.41 0.68 0.69 -0.84 -0.83 0.89 0.22 0.5 -0.77 -0.62
--0.5 0.29 0.3 0.6 -0.79 -0.48 -0.23 -0.06 -0.58 0.14 0.67 0.24 0.57
-0.48 -0.44 0.22 0.41 0.77 0.63 0.97 1 0.57 -0.47 0.4 -0.37 0.28 -0.52
--0.25 -0.14 0.57 -0.89 0 0.44 -0.13 0.5 0.39 0.26 -0.18 -0.88 0.86
--0.63 0.79 -0.15 0.51 -0.05 -0.75 0.88 0.12 -0.8 -0.64 -0.31 0.55 0.41
-0.34 -0.91 -0.75 -0.15 -0.0100001 -0.9 0.75 -0.2 0.15 0.97 -0.95;
+#A 0 0.57 0.56 -0.11 0.71 0.11 -0.23 0.85 0.0799999 0.04 -0.5 -0.86 0.91 0.47 -0.73 -0.06 -0.27 0.09 -0.74 0.26 -0.75 -0.81 -0.21 0.89 0.78 0.62 0.77 0.41 0.68 0.69 -0.84 -0.83 0.89 0.22 0.5 -0.77 -0.62 -0.5 0.29 0.3 0.6 -0.79 -0.48 -0.23 -0.06 -0.58 0.14 0.67 0.24 0.57 0.48 -0.44 0.22 0.41 0.77 0.63 0.97 1 0.57 -0.47 0.4 -0.37 0.28 -0.52 -0.25 -0.14 0.57 -0.89 0 0.44 -0.13 0.5 0.39 0.26 -0.18 -0.88 0.86 -0.63 0.79 -0.15 0.51 -0.05 -0.75 0.88 0.12 -0.8 -0.64 -0.31 0.55 0.41 0.34 -0.91 -0.75 -0.15 -0.0100001 -0.9 0.75 -0.2 0.15 0.97 -0.95;
 #X coords 0 1 100 -1 200 140 1 0 0;
 #X restore 33 369 graph;
-#X obj 35 303 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 137 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 251 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 -1 cnv 3 800 3 empty empty array.rand 14 14 1 16 -128992 -66577
-0;
-#X obj 621 40 plnf_version;
-#X text 32 48 populates an array with random floats between $lownum
-and $hinum \, in steps equal to $step;
+#X obj 35 303 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 83 137 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X text 32 48 populates an array with random floats between $lownum and $hinum \, in steps equal to $step;
 #X text 103 137 bang - populates array;
-#X obj 1 165 cnv 3 800 3 empty empty arguments 8 12 0 13 -228856 -1
-0;
 #X obj 35 325 array.rand \$0_array -1 1 0.01;
-#X text 87 173 \$1 name of the array to populate;
-#X text 87 192 \$2 lownum;
-#X text 87 212 \$3 hinum;
-#X text 87 232 \$4 step;
-#X connect 1 0 11 0;
+#X text 87 193 \$1 name of the array to populate;
+#X text 87 212 \$2 lownum;
+#X text 87 232 \$3 hinum;
+#X text 87 252 \$4 step;
+#X obj -1 -1 cnv 15 805 23 empty empty array.rand 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 118 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 279 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X obj 0 170 cnv 15 805 17 empty empty arguments 8 8 0 12 #282d39 #efefef 0;
+#X obj 621 40 plnf_version;
+#X obj 636 303 declare -path planifolia;
+#X connect 1 0 5 0;

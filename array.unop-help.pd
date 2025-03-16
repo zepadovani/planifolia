@@ -1,57 +1,41 @@
-#N canvas 642 23 1278 1035 12;
+#N canvas 642 0 1278 1005 12;
+#X declare -path planifolia;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-arrayA 10 float 3;
-#A 0 -1 0.5 0.8 -0.9 -0.7 -0.9 0.1 1 0.8 0.4;
+#A 0 -0.3 0.8 -0.4 -0.5 -0.9 0.5 -0.4 -0.9 -0.8 0.2;
 #X coords 0 1 10 -1 200 140 1 0 0;
-#X restore 57 333 graph;
+#X restore 57 373 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-arrayB 10 float 2;
 #X coords 0 1 10 -1 200 140 1 0 0;
 #X restore 55 577 graph;
-#X obj 324 438 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 324 569 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 324 619 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 131 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 87 139 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 171 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 87 179 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 281 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 -1 cnv 3 800 3 empty empty array.unop 14 14 1 16 -128992 -66577
-0;
+#X obj 324 435 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 324 554 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 324 619 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 87 139 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 87 191 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
 #X text 107 139 bang;
-#X obj 1 205 cnv 3 800 3 empty empty arguments 8 12 0 13 -228856 -1
-0;
 #X obj 621 40 plnf_version;
-#X text 321 413 1 generate random values to test;
-#X text 322 546 2 perform different operations;
-#X obj 323 695 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 348 692 you can also use expr or any arbitrary abstraction!
-;
+#X text 342 551 2 perform different operations;
+#X obj 323 681 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X text 344 675 you can also use expr or any arbitrary abstraction!;
 #X obj 324 460 array.rand \$0-arrayA -1 1 0.1;
 #X obj 324 589 array.unop \$0-arrayA \$0-arrayB abs;
-#X obj 323 640 array.unop \$0-arrayA \$0-arrayB + 2;
-#X obj 323 713 array.unop \$0-arrayA \$0-arrayB expr fmod($f1 \, 0.2)
-, f 64;
-#X text 109 179 iterated output values (the same stored in arrayB)
-;
-#X text 32 48 Having an arrayA \, uses an arbitrary object or abstraction
-(with one numerical input) to perform the desired operation in the
-input values (one by one) and stores the result in arrayB;
-#X text 85 213 \$1 array 1 (input data);
-#X text 85 231 \$2 array 2 (output data);
-#X text 85 250 \$3 ... operation ex. "expr abs($f1-2)";
-#X connect 2 0 19 0;
-#X connect 3 0 20 0;
-#X connect 4 0 21 0;
-#X connect 17 0 22 0;
+#X obj 323 713 array.unop \$0-arrayA \$0-arrayB expr fmod($f1 \, 0.2), f 64;
+#X text 109 191 iterated output values (the same stored in arrayB);
+#X text 32 48 Having an arrayA \, uses an arbitrary object or abstraction (with one numerical input) to perform the desired operation in the input values (one by one) and stores the result in arrayB;
+#X text 85 240 \$1 array 1 (input data);
+#X text 85 258 \$2 array 2 (output data);
+#X text 85 277 \$3 ... operation ex. "expr abs($f1-2)";
+#X obj -1 -1 cnv 15 805 23 empty empty array.unnop 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 118 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 171 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 300 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X obj 0 221 cnv 15 805 17 empty empty arguments 8 8 0 12 #282d39 #efefef 0;
+#X text 345 431 1 first \, generate random values to test;
+#X obj 323 640 array.unop \$0-arrayA \$0-arrayB / 10;
+#X obj 639 319 declare -path planifolia;
+#X connect 2 0 12 0;
+#X connect 3 0 13 0;
+#X connect 4 0 26 0;
+#X connect 10 0 14 0;

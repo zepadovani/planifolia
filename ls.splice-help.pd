@@ -1,35 +1,26 @@
 #N canvas 476 159 803 484 12;
-#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X obj 1 121 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 127 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 231 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 237 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 1 271 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X obj 1 -1 cnv 3 800 3 empty empty ls.splice 14 14 1 16 -128992 -66577
-0;
+#X declare -path planifolia;
+#X obj 83 127 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 83 237 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
 #X obj 619 60 plnf_version;
 #X msg 145 382 10 20 30 40 50;
 #X obj 79 455 print;
 #X obj 79 422 ls.splice;
-#X msg 59 321 1 1 2;
-#X msg 107 355 4;
 #X text 32 48 substitutes elemen N in 'list 2' by 'list 1';
-#X obj 83 157 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
-;
-#X obj 83 197 cnv 18 3 17 empty empty 2 5 9 0 14 -228856 -162280 0
-;
-#X text 104 197 list: original list (list 2);
-#X text 104 157 int: index of the element in 'list 2' to substitute
-by 'list 1' (N);
+#X obj 83 149 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 83 171 cnv 18 3 17 empty empty 2 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X text 104 171 list: original list (list 2);
+#X text 104 149 int: index of the element in 'list 2' to substitute by 'list 1' (N);
 #X text 104 127 list: list to insert (list 1);
 #X text 105 237 list: output list;
-#X connect 8 0 10 2;
-#X connect 10 0 9 0;
-#X connect 11 0 10 0;
-#X connect 12 0 10 1;
+#X obj -1 -1 cnv 15 805 23 empty empty ls.splice 8 10 0 20 #282d39 #efefef 0;
+#X obj 0 106 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 279 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 199 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X msg 107 355 2;
+#X msg 59 321 100 200 300;
+#X obj 621 312 declare -path planifolia;
+#X connect 3 0 5 2;
+#X connect 5 0 4 0;
+#X connect 17 0 5 1;
+#X connect 18 0 5 0;

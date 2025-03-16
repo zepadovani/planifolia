@@ -1,69 +1,49 @@
 #N canvas 410 58 820 747 12;
-#X obj 48 325 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 48 372 ls.scramble;
-#X obj 131 478 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 48 401 t l l;
-#X obj 92 400 print randomlist;
-#X obj 103 545 print current_list;
-#X obj 49 499 ls.quicksort;
-#X obj 1 27 cnv 3 800 3 empty empty description 12 12 0 12 -128992
--66577 0;
-#X msg 35 66 quicksort;
+#X declare -path planifolia;
+#X obj 88 380 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 88 489 ls.scramble;
+#X obj 171 638 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 88 518 t l l;
+#X obj 132 517 print randomlist;
+#X obj 170 705 print current_list;
+#X obj 89 659 ls.quicksort;
+#X msg 32 48 quicksort;
 #N canvas 0 23 450 300 (subpatch) 0;
 #X obj 347 40 pdcontrol;
 #X msg 14 40 browse https://en.wikipedia.org/wiki/Quicksort;
 #X obj 13 8 inlet;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
-#X coords 0 -1 1 1 1 1 2 1 1;
-#X restore 36 83 pd;
-#X text 105 67 algorithm to sort elements of a list;
-#X obj 1 151 cnv 3 800 3 empty empty inlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 157 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 83 177 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
-;
-#X text 103 157 list: list to sort;
-#X text 279 176 gets current step and current list at each iteration
-;
-#X text 104 177 float: 1/0 (default 0) -;
-#X obj 1 201 cnv 3 800 3 empty empty outlets 8 12 0 13 -228856 -1 0
-;
-#X obj 83 207 cnv 18 3 17 empty empty 0 5 9 0 14 -228856 -162280 0
-;
-#X obj 83 227 cnv 18 3 17 empty empty 1 5 9 0 14 -228856 -162280 0
-;
-#X text 105 207 list: sorted list;
-#X obj 83 247 cnv 18 3 17 empty empty 2 5 9 0 14 -228856 -162280 0
-;
-#X obj 83 267 cnv 18 3 17 empty empty 3 5 9 0 14 -228856 -162280 0
-;
-#X text 104 267 float: if inlet 1 is "1" \, current iteration (from
-0 to N-1);
-#X text 104 227 float: N \, number of iterations (counting last state)
-;
-#X obj 1 291 cnv 3 800 3 empty empty example 8 12 0 13 -228856 -1 0
-;
-#X text 199 369 scrambled list;
-#X obj 131 431 loadbang;
-#X msg 131 453 1;
-#X obj 130 523 print step_count;
-#X obj 76 566 print final_number_of_steps;
-#X obj 49 587 print final_sorted_list;
+#X coords 0 -1 1 1 15 15 2 1 1;
+#X restore 33 65 pd;
+#X text 102 48 algorithm to sort elements of a list;
+#X obj 84 147 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 84 167 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X text 104 146 list: list to sort;
+#X text 280 165 gets current step and current list at each iteration;
+#X text 105 166 float: 1/0 (default 0) -;
+#X obj 84 225 cnv 18 3 17 empty empty 0 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 84 245 cnv 18 3 17 empty empty 1 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X text 106 224 list: sorted list;
+#X obj 84 265 cnv 18 3 17 empty empty 2 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X obj 84 285 cnv 18 3 17 empty empty 3 5 9 0 14 #dcdcdc #9c9c9c 0;
+#X text 105 284 float: if inlet 1 is "1" \, current iteration (from 0 to N-1);
+#X text 105 244 float: N \, number of iterations (counting last state);
+#X text 198 566 scrambled list;
+#X obj 171 591 loadbang;
+#X msg 171 613 1;
+#X obj 170 683 print step_count;
+#X obj 170 731 print final_number_of_steps;
+#X obj 89 803 print final_sorted_list;
 #N canvas 634 72 1067 801 chars_and_floats 0;
 #X obj 216 118 ls.iter;
 #X obj 217 145 list tosymbol;
 #X obj 69 94 ls.ser.arithm 0 99 1;
 #X obj 70 168 list store;
-#X obj 80 29 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 80 29 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X msg 574 101 reset;
 #X obj 71 232 ls.scramble;
-#X obj 167 375 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
+#X obj 167 375 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 84 294 t l l;
 #X obj 128 293 print randomlist;
 #X text 235 262 scrambled list;
@@ -108,12 +88,11 @@
 #X connect 24 2 23 0;
 #X connect 24 3 5 0;
 #X connect 25 0 3 1;
-#X restore 8 636 pd chars_and_floats;
-#X text 153 636 <- sorting floats and chars;
+#X restore 62 841 pd chars_and_floats;
+#X text 207 840 <- sorting floats and chars;
 #N canvas 0 23 433 312 longer_symbols 0;
 #X msg 80 40 aa 4 a cd ce cad aad ada 2 19 3 8 1 f 5 12;
-#X obj 162 121 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
+#X obj 162 121 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 134 184 print current_list;
 #X obj 80 138 ls.quicksort;
 #X obj 196 66 loadbang;
@@ -130,29 +109,38 @@
 #X connect 3 3 7 0;
 #X connect 4 0 5 0;
 #X connect 5 0 1 0;
-#X restore 8 657 pd longer_symbols;
-#X text 148 657 <- sorting floats \, chars and longer symbols;
-#X text 105 247 list: if inlet 1 is "1" \, list state for each iteration
-;
-#X text 32 48 vanilla abstraction implenting an ascending order;
-#X text 32 92 works with floats and symbols (which are sorted to the
-left of the floats);
-#X obj 48 345 ls.ser.arithm 1 10 1;
-#X text 198 344 list from 1 to 10;
-#X text 147 476 toggles iteration monitoring;
-#X obj 1 -1 cnv 3 800 3 empty empty ls.quicksort 14 14 1 16 -128992
--66577 0;
-#X obj 621 70 plnf_version;
-#X connect 0 0 39 0;
+#X restore 62 862 pd longer_symbols;
+#X text 202 861 <- sorting floats \, chars and longer symbols;
+#X text 106 264 list: if inlet 1 is "1" \, list state for each iteration;
+#X text 29 29 vanilla abstraction implenting an ascending order;
+#X text 29 73 works with floats and symbols (which are sorted to the left of the floats);
+#X obj 88 400 ls.ser.arithm 1 10 1;
+#X text 238 398 list from 1 to 10;
+#X text 187 635 toggles iteration monitoring;
+#X obj 621 40 plnf_version;
+#X obj -1 -1 cnv 15 805 23 empty empty ls.quicksort 8 10 0 20 #282d39 #efefef 0;
+#X obj -1 118 cnv 15 805 17 empty empty inlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 202 cnv 15 805 17 empty empty outlets 8 8 0 12 #282d39 #efefef 0;
+#X obj -1 317 cnv 15 805 17 empty empty example 8 8 0 12 #282d39 #efefef 0;
+#X listbox 88 567 20 0 0 0 - - - 0;
+#X listbox 88 443 20 0 0 0 - - - 0;
+#X text 198 443 original (ordered);
+#X listbox 89 768 20 0 0 0 - - - 0;
+#X text 200 767 sorted;
+#X obj 621 352 declare -path planifolia;
+#X connect 0 0 35 0;
 #X connect 1 0 3 0;
 #X connect 2 0 6 1;
-#X connect 3 0 6 0;
+#X connect 3 0 43 0;
 #X connect 3 1 4 0;
-#X connect 6 0 31 0;
-#X connect 6 1 30 0;
+#X connect 6 0 46 0;
+#X connect 6 1 26 0;
 #X connect 6 2 5 0;
-#X connect 6 3 29 0;
-#X connect 8 0 9 0;
-#X connect 27 0 28 0;
-#X connect 28 0 2 0;
-#X connect 39 0 1 0;
+#X connect 6 3 25 0;
+#X connect 7 0 8 0;
+#X connect 23 0 24 0;
+#X connect 24 0 2 0;
+#X connect 35 0 44 0;
+#X connect 43 0 6 0;
+#X connect 44 0 1 0;
+#X connect 46 0 27 0;
