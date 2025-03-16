@@ -1,4 +1,4 @@
-## planifolia 0.3.1
+## planifolia 0.32
 
 `Planifolia` (do segundo nome da orquídea 'Vanilla planifolia') é um conjunto de abstrações Pure Data projetadas para funcionar sem quaisquer externais compilados.
 

@@ -1,5 +1,5 @@
 #N canvas 120 220 161 407 12;
-#N canvas 806 206 928 664 write 0;
+#N canvas 806 206 928 664 write 1;
 #X obj 210 10 loadbang;
 #X obj 113 130 textfile;
 #X obj 287 7 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
@@ -13,8 +13,7 @@
 #X obj 423 156 list prepend symbol;
 #X obj 423 180 list trim;
 #X obj 385 203 makefilename udated\ on:\ %s;
-#X obj 113 168 symbol;
-#X obj 113 203 makefilename planifolia\ %s;
+#X obj 113 203 makefilename planifolia\ %.2f;
 #X connect 0 0 5 0;
 #X connect 0 0 9 0;
 #X connect 1 0 13 0;
@@ -26,9 +25,8 @@
 #X connect 10 0 11 0;
 #X connect 11 0 12 0;
 #X connect 12 0 7 0;
-#X connect 13 0 14 0;
-#X connect 14 0 3 0;
+#X connect 13 0 3 0;
 #X restore 242 16 pd write;
-#X obj -1 1 cnv 15 160 16 empty \$0_line1 planifolia\ 0.3.1 6 7 0 12 #282d39 #efefef 0;
+#X obj -1 1 cnv 15 160 16 empty \$0_line1 planifolia\ 0.320000.2 6 7 0 12 #282d39 #efefef 0;
 #X obj -1 19 cnv 15 160 16 empty \$0_line2 udated\ on:\ 2025-mar-16 6 7 0 10 #282d39 #efefef 0;
 #X coords 0 -1 1 1 161 36 1 -1 0;
